@@ -11,7 +11,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: Muli;
+    font-family: 'Muli';
     font-weight: 700;
     color: #333333;
 }
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .navbar {
@@ -37,6 +37,7 @@ h2 {
 
 .navbar .menu {
     text-decoration: none;
+    font-size: 1.25rem;
     padding-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -51,7 +52,7 @@ h2 {
 }
 
 .hero-text {
-    width: 565px;
+    width: 650px;
     margin: 0 auto;
     text-align: center;
 }
@@ -67,25 +68,26 @@ h2 {
 
 .hero-text #hero-title {
     padding-top: 5rem;
-    font-size: 3.75rem;
+    font-size: 4rem;
     margin: 0 auto;
 }
 
 .hero-text #hero-subtitle {
     font-weight: 300;
-    font-size: 2rem;
-    width: 560px;
-    line-height: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2.8rem;
     margin: 0 auto;
 }
 
 .hero-text #location {
-    font-family: Muli;
+    font-family: 'Muli';
     font-weight: 300;
+    font-size: 1.875rem;
 }
 
 #view-work {
     color: #ffffff;
+    font-size: 1.875rem;
 }
 
 .hero-content {
@@ -103,9 +105,9 @@ h2 {
 .tag {
     background: #FEA6A6;
     border-radius: 15px;
-    padding: 0.4rem 0.75rem;
+    padding: 0.4rem 0.625rem;
     color: #ffffff;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     margin-right: 0.15rem;
 }
 
@@ -141,7 +143,7 @@ h2 {
 }
 
 .button {
-    border-radius: 4px;
+    border-radius: 0.4rem;
     background: linear-gradient(#0ECED2, #06A0A6);
     color: #ffffff;
     text-decoration: none;
@@ -180,7 +182,7 @@ footer {
 }
 
 .copyright {
-     font-size: 0.75rem;
+     font-size: 0.875rem;
      text-align: left;
      margin-left: 2rem;
      position: relative;
@@ -189,8 +191,8 @@ footer {
 
 .footer-links {
     text-decoration: none;
-    font-size: 3rem;
-    width: 310px;
+    font-size: 2.5rem;
+    width: 265px;
     margin: 0 auto;
 }
 
@@ -207,9 +209,17 @@ i {
 }
 
 .fa-linkedin-in {
-    bottom: 5px;
+    bottom: 3px;
 }
 
 .footer-links a:hover {
     color: #EF7D93;
+}
+
+@media (min-width: 640px) and (max-width: 1240px) {
+
+}
+
+@media (max-width: 640px) {
+
 }
