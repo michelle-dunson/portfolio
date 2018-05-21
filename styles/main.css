@@ -201,6 +201,15 @@ footer {
     padding-right: 0.5rem;
 }
 
+i {
+    vertical-align: baseline;
+    position: relative;
+}
+
+.fa-linkedin-in {
+    bottom: 5px;
+}
+
 .footer-links a:hover {
     color: #EF7D93;
 }
