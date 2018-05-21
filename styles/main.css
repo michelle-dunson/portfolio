@@ -26,24 +26,28 @@ h2 {
 }
 
 .navbar {
-     padding: 0.5rem;
+    padding: 0.5rem;
+    margin-right: 5rem;
  }
 
- .navbar .logo {
-     position: relative;
-     left: 2rem;
+.navbar .logo {
+    position: relative;
+    left: 3rem;
  }
 
 .navbar .menu {
     text-decoration: none;
-    padding: 2rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: #333333;
     position: relative;
     float: right;
 }
 
-.navbar .menu .last {
-    margin-right: 4rem;
+.navbar .menu:hover {
+    color: #EF7D93;
+    border-bottom: 2px solid #EF7D93;
 }
 
 .hero-text h1,
@@ -70,20 +74,26 @@ h2 {
 }
 
 .hero-text #location {
+    font-family: Muli;
     font-weight: 300;
 }
 
- .hero-content {
-     position: relative;
-     min-height: 875px;
-     background-image: url(../assets/images/portfolio_bg.jpg);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-size: cover;
-     background-color: #FEA6A6;
-     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-     grid-column: 1 / -1;
+#view-work {
+    color: #ffffff;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.hero-content {
+    position: relative;
+    min-height: 875px;
+    background-image: url(../assets/images/portfolio_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #FEA6A6;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
  }
 
 .tag {
@@ -95,15 +105,15 @@ h2 {
     margin-right: 0.15rem;
 }
 
-.flex-container-even, .flex-container-odd {
-    height: 645px;
-    width: 100%;
+.flex-container-even,
+.flex-container-odd {
+    justify-content: space-between;
 }
 
 .flex-container-even {
     display: flex;
     flex-direction: row;
-    margin: 4rem 2rem 0 2rem;
+    padding: 4rem;
 }
 
 .flex-container-even img {
@@ -113,30 +123,17 @@ h2 {
 .flex-container-odd {
     display: flex;
     flex-direction: row-reverse;
-    margin: 0 2rem 0 2rem;
-    position: relative;
-    top: -650px;
-}
-
-.details {
-    margin: 0 auto;
-}
-
-.odd-background {
-    position: relative;
-    top: -100px;
-    width: 100%;
-    height: 645px;
+    padding: 4rem;
     background-color: rgba(254,166,166,0.3);
-    clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
-    -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
-    grid-column: 1 / -1;
+    background-size: cover;
 }
 
 .details p {
-    width: 570px;
+    max-width: 570px;
     line-height: 2rem;
     font-size: 1.45rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .button {
@@ -145,22 +142,31 @@ h2 {
     color: #ffffff;
     text-decoration: none;
     padding: 1rem;
-    position: relative;
+}
+
+.button:hover {
+    opacity: 0.8;
 }
 
 footer {
     clear: both;
+    padding-top: 4rem;
 }
 
 .chat {
-    margin: 0 auto;
-    padding: 4rem;
+    padding-bottom: 4rem;
+}
+
+.chat h1 {
+    padding-bottom: 2rem;
 }
 
 .chat .button {
     background: linear-gradient(#F8B4C5, #EF7D93);
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+    margin-left: 50%;
+    margin-right: 50%;
 }
 
 .footer-content {
@@ -174,10 +180,25 @@ footer {
      text-align: left;
      margin-left: 2rem;
      position: relative;
-     top: 2rem;
+     top: 3.5rem;
  }
 
 .footer-links {
-    position: relative;
-    float: right;
+    text-decoration: none;
+    font-size: 3rem;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    width: 310px;
+}
+
+.footer-links a {
+    display: inline;
+    color: #ffffff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #EF7D93;
 }
