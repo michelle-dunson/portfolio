@@ -50,6 +50,12 @@ h2 {
     border-bottom: 2px solid #EF7D93;
 }
 
+.hero-text {
+    width: 565px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .hero-text h1,
 .hero-text h2,
 .hero-text p {
@@ -80,8 +86,6 @@ h2 {
 
 #view-work {
     color: #ffffff;
-    margin-left: 50%;
-    margin-right: 50%;
 }
 
 .hero-content {
@@ -105,11 +109,6 @@ h2 {
     margin-right: 0.15rem;
 }
 
-.flex-container-even,
-.flex-container-odd {
-    justify-content: space-between;
-}
-
 .flex-container-even {
     display: flex;
     flex-direction: row;
@@ -126,6 +125,11 @@ h2 {
     padding: 4rem;
     background-color: rgba(254,166,166,0.3);
     background-size: cover;
+}
+
+.flex-container-even,
+.flex-container-odd {
+    justify-content: space-between;
 }
 
 .details p {
@@ -149,12 +153,14 @@ h2 {
 }
 
 footer {
-    clear: both;
     padding-top: 4rem;
 }
 
 .chat {
     padding-bottom: 4rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .chat h1 {
@@ -165,8 +171,6 @@ footer {
     background: linear-gradient(#F8B4C5, #EF7D93);
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-    margin-left: 50%;
-    margin-right: 50%;
 }
 
 .footer-content {
@@ -175,7 +179,7 @@ footer {
     height: 90px;
 }
 
- .copyright {
+.copyright {
      font-size: 0.75rem;
      text-align: left;
      margin-left: 2rem;
@@ -186,10 +190,8 @@ footer {
 .footer-links {
     text-decoration: none;
     font-size: 3rem;
-    position: absolute;
-    right: 50%;
-    left: 50%;
     width: 310px;
+    margin: 0 auto;
 }
 
 .footer-links a {
