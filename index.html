@@ -13,21 +13,21 @@
         <header class="hero-content">
             <nav class="navbar">
                 <a href="index.html"><img src="assets/images/logo.png" alt="michelle dunson logo" class="logo"></a>
-                <div class="container">
-                    <div class="menu-container js_nav-item"></div>
-                    <input type="checkbox" name="toggle" id="toggle"/>
-                    <label for="navbar-toggle"></label>
-                    <div class="menu-mobile">
-                        <div class="collapse navbar-collapse nav-collapse">
-                            <div class="menu-container">
-                                <ul class="nav navbar-nav container-right ">
-                                    <li class="js_nav-item nav-item"><a href="index.html" class="nav-item-child">Work</a></li>
-                                    <li class="js_nav-item nav-item"><a href="#" class="nav-item-child">About</a></li>
-                                    <li class="js_nav-item nav-item"><a href="#" class="nav-item-child">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="menu-container" aria-label="Menu">
+                    <label for="toggle-mobile-menu" aria-label="Menu">&#9776;
+                        <!---<div id="nav-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>--->
+                    </label>
+                    <input id="toggle-mobile-menu" type="checkbox" />
+                    <ul class="navbar-nav" id="main-menu">
+                        <li><a href="index.html" class="nav-item-child">Work</a></li>
+                        <li><a href="#" class="nav-item-child">About</a></li>
+                        <li><a href="#" class="nav-item-child">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
             <div class="hero-text">
