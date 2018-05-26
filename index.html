@@ -35,10 +35,10 @@
             <a name="work"></a>
             <h1>Featured Work</h1>
             <section class="flex-container-even">
-                <div class="thumbnail">
+                <div class="thumbnail thumbnail-even">
                     <img src="assets/images/dogtopia.png" alt="Dogtopia" class="dogtopia">
                 </div>
-                <div class="details">
+                <div class="details details-even">
                     <h2>Dogtopia</h2>
                     <span class="tag">User Research</span>
                     <span class="tag">Branding</span>
@@ -48,10 +48,10 @@
                 </div>
             </section>
             <section class="flex-container-odd">
-                <div class="thumbnail">
+                <div class="thumbnail thumbnail-odd">
                     <img src="assets/images/blocbox.png" alt="Blocbox">
                 </div>
-                <div class="details">
+                <div class="details details-odd">
                     <h2>Blocbox</h2>
                     <span class="tag">User Research</span>
                     <span class="tag">Branding</span>
@@ -77,5 +77,32 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript">
+            var scrollPos = window.pageYOffset;
+            var evenDetails = document.getElementsByClassName('details-even')[0];
+            var oddDetails = document.getElementsByClassName('details-odd')[0];
+            var evenThumbnail = document.getElementsByClassName('thumbnail-even')[0];
+            var oddThumbnail = document.getElementsByClassName('thumbnail-odd')[0];
+
+            if(screen.width > 650) {
+                window.addEventListener('scroll', function() {
+                    scrollPos = window.pageYOffset;
+
+                    if (scrollPos >= 100) {
+                        evenDetails.classList.add('even');
+                        evenThumbnail.classList.add('even');
+                    }
+                });
+
+                window.addEventListener('scroll', function() {
+                    scrollPos = window.pageYOffset;
+
+                    if (scrollPos >= 600) {
+                        oddDetails.classList.add('odd');
+                        oddThumbnail.classList.add('odd');
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

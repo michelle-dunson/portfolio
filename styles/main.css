@@ -536,6 +536,16 @@ h2 {
     padding-bottom: 5%;
 }
 
+.details.even,
+.thumbnail.odd {
+    animation: fadeInRightBig 1.5s ease-in-out forwards;
+}
+
+.details.odd,
+.thumbnail.even {
+    animation: fadeInLeftBig 1.5s ease-in-out forwards;
+}
+
 button {
     width: 300px;
     height: 70px;
