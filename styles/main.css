@@ -536,16 +536,6 @@ h2 {
     padding-bottom: 5%;
 }
 
-.details.even,
-.thumbnail.odd {
-    animation: fadeInRightBig 1.5s ease-in-out forwards;
-}
-
-.details.odd,
-.thumbnail.even {
-    animation: fadeInLeftBig 1.5s ease-in-out forwards;
-}
-
 button {
     width: 300px;
     height: 70px;
@@ -720,6 +710,15 @@ i {
     .contact a:hover {
         color: #EF7D93;
     }
+    .details.even,
+    .thumbnail.odd {
+        animation: fadeInRightBig 1.5s ease-in-out forwards;
+    }
+
+    .details.odd,
+    .thumbnail.even {
+        animation: fadeInLeftBig 1.5s ease-in-out forwards;
+    }
 }
 
 @media (max-width: 660px) {
@@ -729,6 +728,7 @@ i {
     body {
         font-size: 1.125rem;
         font-family: 'Montserrat';
+        font-weight: 400;
     }
     .navbar .logo {
         left: 1.5rem;
@@ -800,6 +800,8 @@ i {
     }
     .details p {
         max-width: 100%;
+        font-family: 'Montserrat';
+        font-weight: 400;
     }
     button {
         height: 60px;
@@ -808,11 +810,10 @@ i {
     }
     .button {
         font-family: 'Montserrat';
-        padding-left: 40px;
-        padding-right: 40px;
+        font-weight: 400;
+        padding: 0;
     }
     .contact a {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding: 0;
     }
 }
