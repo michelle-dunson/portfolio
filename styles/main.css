@@ -553,22 +553,12 @@ button {
     border-radius: 0.4rem;
 }
 
-button:hover {
-    background: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 3px #06A0A6;
-    color: #06A0A6;
-}
-
 .button {
     color: #ffffff;
     text-decoration: none;
     letter-spacing: 0.10rem;
     padding: 25px 65px;
     box-sizing: border-box;
-}
-
-.button:hover {
-    color: #06A0A6;
 }
 
 footer {
@@ -592,15 +582,6 @@ footer {
 
 .contact a {
     padding: 25px 100px;
-}
-
-.contact:hover {
-    background: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 3px #EF7D93;
-}
-
-.contact a:hover {
-    color: #EF7D93;
 }
 
 .footer-content {
@@ -724,6 +705,21 @@ i {
     .menu-container ul li {
         display: inline-block;
     }
+    button:hover {
+        background: rgba(0,0,0,0);
+        box-shadow: inset 0 0 0 3px #06A0A6;
+        color: #06A0A6;
+    }
+    .button:hover {
+        color: #06A0A6;
+    }
+    .contact:hover {
+        background: rgba(0,0,0,0);
+        box-shadow: inset 0 0 0 3px #EF7D93;
+    }
+    .contact a:hover {
+        color: #EF7D93;
+    }
 }
 
 @media (max-width: 660px) {
@@ -732,6 +728,7 @@ i {
     }
     body {
         font-size: 1.125rem;
+        font-family: 'Montserrat';
     }
     .navbar .logo {
         left: 1.5rem;
@@ -807,8 +804,10 @@ i {
     button {
         height: 60px;
         width: 250px;
+        border-color: transparent;
     }
     .button {
+        font-family: 'Montserrat';
         padding-left: 40px;
         padding-right: 40px;
     }
