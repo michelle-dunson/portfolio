@@ -114,6 +114,10 @@ h2 {
   right: 0;
 }
 
+.active a {
+    color: #EF7D93;
+}
+
 button {
     width: 300px;
     height: 70px;
