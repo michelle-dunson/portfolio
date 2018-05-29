@@ -1,13 +1,40 @@
+@keyframes showup {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-2000px; }
+    20% { margin-left:-2000px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
 header {
     min-height: 600px;
+    color: #ffffff;
     background-size: cover;
-    background-color: rgba(254,166,166,0.4);
+    background-color: rgba(254,166,166,0.5);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
  }
 
  .greeting {
-     margin-top: 8rem;
+     padding-top: 6rem;
+     font-size: 3rem;
+     text-align: center;
+ }
+
+ .appear {
+     display: inline-block;
+     overflow: hidden;
+     white-space: nowrap;
+     animation: showup 2s forwards;
+ }
+
+ .reveal {
+     margin-left: -355px;
+     animation: slidein 7s forwards;
  }
 
  .flex-container {
@@ -62,7 +89,6 @@ input[type=submit]:hover {
     color: #06A0A6;
 }
 
-
 @media (max-width: 660px) {
     .flex-container {
         flex-direction: column;
@@ -72,18 +98,19 @@ input[type=submit]:hover {
     }
     .container > p {
         line-height: 2.5rem;
-        font-size: 1.7rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        font-size: 1.5rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
     .container > form {
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
     input[type=submit] {
         width: 100%;
     }
-    h1 {
-        font-size: 3rem;
+    .greeting {
+        font-size: 2rem;
+        padding-top: 8rem;
     }
 }
