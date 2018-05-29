@@ -20,7 +20,8 @@ header {
  }
 
  .greeting {
-     font-family: 'Muli'
+     font-family: 'Muli';
+     font-weight: 700;
      padding-top: 6rem;
      font-size: 3rem;
      text-align: center;
