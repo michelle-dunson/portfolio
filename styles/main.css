@@ -72,7 +72,7 @@ h2 {
 
 .menu-container ul li {
     display: block;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 .menu-container a {
@@ -134,7 +134,7 @@ button {
 }
 
 footer {
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .chat {

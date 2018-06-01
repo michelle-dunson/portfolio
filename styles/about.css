@@ -18,19 +18,32 @@ header {
     color: #ffffff;
 }
 
+.profile-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+}
+
+.profile-image img {
+    border-radius: 100%;
+    width: 300px;
+}
+
 .timeline {
     position: relative;
     padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .center-line::before {
     content: "";
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 50%;
     z-index: -1;
     width: 3px;
-    height: 90%;
+    height: 80%;
     margin-left: -1px;
     background-color: #9b9b9b;
 }
@@ -53,6 +66,10 @@ span.teal {
     color: #FEA6A6;
 }
 
+.left > h1 {
+    color: #06A0A6;
+}
+
 .italic {
     font-family: 'Montserrat';
     font-weight: 300;
@@ -71,6 +88,7 @@ span.teal {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    padding-top: 2rem;
 }
 
 .flex-container.peach {
@@ -80,6 +98,19 @@ span.teal {
 .left,
 .right {
     width: 50%;
+    position: relative;
+}
+
+.left > .image {
+    margin-left: 12rem;
+}
+
+.left > .image > img {
+    margin-left: 7rem;
+}
+
+.left > .image > .italic {
+    margin-left: 4.5rem;
 }
 
 .year {
@@ -89,9 +120,20 @@ span.teal {
     text-align: right;
 }
 
+.left.date {
+    right: -75px;
+}
+
 .left > .year {
     margin-left: 12rem;
-    color: #06A0A6;
+}
+
+.italic.last {
+    margin-bottom: 4rem;
+}
+
+.right {
+    left: 70px;
 }
 
 img {
@@ -103,15 +145,11 @@ img {
     position: relative;
     border: 3px solid #9b9b9b;
     border-radius: 4px;
-    width: 580px;
+    width: 90%;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     line-height: 1.5rem;
     margin: 1.15rem 0;
-}
-
-.left {
-    margin-right: 70px;
 }
 
 .right > .event::before {
@@ -187,11 +225,31 @@ img {
     padding-right: 1rem;
 }
 
-.one-fourth > i {
-    font-size: 3rem;
+.icon {
+    width: 150px;
+    height: 150px;
     background-color: #ffffff;
     border-radius: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.fas {
+    font-size: 3rem;
     padding: 3rem;
+    align-items: center;
+}
+
+.fa-edit {
+    padding-left: 3.25rem;
+}
+
+.fa-code-branch {
+    padding-left: 3.5rem;
+}
+
+.fa-code {
+    padding-left: 2.8rem;
+    padding-top: 3.15rem;
 }
 
 .one-fourth > h1 {
