@@ -1,0 +1,205 @@
+header {
+    min-height: 600px;
+    background-size: cover;
+    background-color: rgba(239,125,147,0.75);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+ }
+
+.heading {
+    font-family: 'Muli';
+    font-weight: 700;
+    padding-top: 6rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.scroll {
+    color: #ffffff;
+}
+
+.timeline {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.center-line::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    z-index: -1;
+    width: 3px;
+    height: 90%;
+    margin-left: -1px;
+    background-color: #9b9b9b;
+}
+
+.timeline-wrap {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+span.teal {
+    color: #06A0A6;
+}
+
+.right > h1 {
+    color: #FEA6A6;
+}
+
+.italic {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-style: italic;
+    width: 300px;
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.left > .italic {
+    margin-left: 12rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.flex-container.peach {
+    flex-direction: row-reverse;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.year {
+    width: 300px;
+    font-size: 6rem;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.left > .year {
+    margin-left: 12rem;
+    color: #06A0A6;
+}
+
+img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.event {
+    position: relative;
+    border: 3px solid #9b9b9b;
+    border-radius: 4px;
+    width: 580px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    margin: 1.15rem 0;
+}
+
+.left {
+    margin-right: 70px;
+}
+
+.right > .event::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -75px;
+    width: 75px;
+    height: 3px;
+    margin-top: -2px;
+    background-color: #9b9b9b;
+}
+
+.right > .event::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -75px;
+    width: 16px;
+    height: 16px;
+    margin: -11px 0 0 -8px;
+    border: 3px solid #9b9b9b;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.left > .event::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -75px;
+    width: 75px;
+    height: 3px;
+    margin-top: -2px;
+    background-color: #9b9b9b;
+}
+
+.left > .event::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -75px;
+    width: 16px;
+    height: 16px;
+    margin: -11px 0 0 -8px;
+    border: 3px solid #9b9b9b;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.first {
+    margin-top: 5rem;
+}
+
+.italic.center {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.process {
+    background-color: rgba(254,166,166,0.4);
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.process > h2 {
+    padding-bottom: 2rem;
+}
+
+.one-fourth {
+    padding-right: 1rem;
+}
+
+.one-fourth > i {
+    font-size: 3rem;
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 3rem;
+}
+
+.one-fourth > h1 {
+    font-size: 2rem;
+}
+
+.one-fourth > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+}
