@@ -83,7 +83,7 @@ span.teal {
     padding-top: 8rem;
 }
 
-ul {
+.timeline ul {
     list-style: none;
     padding: 0;
 }
@@ -162,63 +162,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-}
-
-.process {
-    background-color: rgba(254,166,166,0.4);
-    padding: 2rem 2rem;
-    text-align: center;
-}
-
-.process > h2 {
-    padding-bottom: 0;
-}
-
-#subtitle {
-    padding-bottom: 3.5rem;
-    font-size: 1.5rem;
-    margin-top: -0.75rem;
-}
-
-.one-fourth {
-    padding-right: 1rem;
-}
-
-.icon {
-    width: 150px;
-    height: 150px;
-    background-color: #ffffff;
-    border-radius: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-.fas {
-    font-size: 3rem;
-    padding: 3rem;
-    align-items: center;
-}
-
-.fa-edit {
-    padding-left: 3.25rem;
-}
-
-.fa-code-branch {
-    padding-left: 3.5rem;
-}
-
-.fa-code {
-    padding-left: 2.8rem;
-    padding-top: 3.15rem;
-}
-
-.one-fourth > h1 {
-    font-size: 2rem;
-}
-
-.one-fourth > p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 0 1rem;
 }
 
 .flex-column {
@@ -346,7 +289,7 @@ ul {
     }
 }
 
-@media (min-width: 661px) {
+@media (min-width: 681px) {
     .one-fourth {
         max-width: 300px;
     }
@@ -369,22 +312,27 @@ ul {
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 680px) {
     .profile-image {
         margin-left: -100px;
     }
     .profile-image img {
         width: 200px;
     }
+    .stay {
+        left: 0;
+    }
+    .scroll {
+        margin-left: -55px;
+    }
     .timeline {
         padding-top: 4rem;
     }
     .timeline h2 {
         font-size: 1.5rem;
-        width: 80%;
         margin: 0 auto;
     }
-    ul {
+    .timeline ul {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -396,29 +344,6 @@ ul {
     }
     .flex-container {
         flex-direction: column;
-    }
-    .one-fourth {
-        padding-top: 2rem;
-    }
-    .heading {
-        font-size: 2rem;
-        text-align: left;
-        width: 80%;
-        margin: 0 auto;
-    }
-    .heading p {
-        display: block;
-        position: relative;
-        left: 0;
-    }
-    .scroll {
-        left: 10%;
-        font-size: 1.8rem;
-    }
-    #subtitle {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding-bottom: 0;
     }
     .flex-column {
         max-height: 300px;
@@ -436,5 +361,22 @@ ul {
     #spencer {
         height: 150px;
         background-position: center center;
+    }
+}
+
+@media (max-width: 625px) {
+    .heading {
+        font-size: 2rem;
+        text-align: left;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .heading p {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    .scroll {
+        margin-left: -140px;
     }
 }

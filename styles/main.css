@@ -34,9 +34,10 @@ h2 {
 
 .navbar .logo {
     position: relative;
-    left: 5%;
+    left: 3%;
     width: 10%;
     min-width: 75px;
+    max-width: 100px;
  }
 
 .menu-container {
@@ -124,6 +125,7 @@ button {
     height: 70px;
     background-color: #06A0A6;
     border-radius: 0.4rem;
+    border-color: transparent;
 }
 
 .button {
@@ -244,7 +246,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     }
 }
 
-@media (min-width: 661px) {
+@media (min-width: 681px) {
     .menu-container {
         height: auto;
     }
@@ -274,7 +276,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 680px) {
     h1 {
         font-size: 2.25rem;
     }
@@ -299,7 +301,7 @@ only screen and (min-device-pixel-ratio: 1.5){
         margin: 1rem;
     }
     .menu-container ul li {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         border-bottom: 2px solid #ffffff;
     }
     button {
