@@ -56,18 +56,6 @@ header {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.profile-image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -150px;
-}
-
-.profile-image img {
-    border-radius: 50%;
-    width: 300px;
-}
-
 h2 {
     text-align: center;
     padding-bottom: 2rem;
@@ -158,9 +146,6 @@ span.teal {
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-content: center;
 }
 
@@ -297,6 +282,9 @@ span.teal {
         max-height: 600px;
         overflow: hidden;
     }
+    .mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 980px) {
@@ -313,17 +301,21 @@ span.teal {
 }
 
 @media (max-width: 680px) {
-    .profile-image {
-        margin-left: -100px;
-    }
-    .profile-image img {
-        width: 200px;
-    }
     .stay {
-        left: 0;
+        display: none !important;
+    }
+    .mobile {
+        font-size: 2.75rem;
+        text-align: center;
+        font-family: 'Muli';
+        font-weight: 700;
+        padding-top: 6rem;
+        padding-bottom: 0;
+        margin: 0;
     }
     .scroll {
-        margin-left: -55px;
+        margin-left: -145px !important;
+        margin-top: -115px;
     }
     .timeline {
         padding-top: 4rem;
@@ -331,6 +323,8 @@ span.teal {
     .timeline h2 {
         font-size: 1.5rem;
         margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .timeline ul {
         padding-left: 1rem;
@@ -341,9 +335,6 @@ span.teal {
     }
     .bio {
         font-size: 1rem;
-    }
-    .flex-container {
-        flex-direction: column;
     }
     .flex-column {
         max-height: 300px;
@@ -366,7 +357,6 @@ span.teal {
 
 @media (max-width: 625px) {
     .heading {
-        font-size: 2rem;
         text-align: left;
         width: 80%;
         margin: 0 auto;
@@ -378,5 +368,15 @@ span.teal {
     }
     .scroll {
         margin-left: -140px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobile {
+        font-size: 2.5rem;
+    }
+    .scroll {
+        font-size: 1.7rem;
+        margin-left: -130px !important;
     }
 }

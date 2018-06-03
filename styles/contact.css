@@ -39,24 +39,6 @@ header {
      animation: slidein 7s forwards;
  }
 
- .profile-image {
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     margin-left: -150px;
- }
-
- .profile-image img {
-     border-radius: 100%;
-     width: 300px;
- }
-
- .flex-container {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
-
  .container {
      width: 50%;
      margin-top: 10rem;
@@ -116,15 +98,6 @@ input[type=submit]:hover {
 }
 
 @media (max-width: 680px) {
-    .profile-image {
-        margin-left: -100px;
-    }
-    .profile-image img {
-        width: 200px;
-    }
-    .flex-container {
-        flex-direction: column;
-    }
     .container {
         width: 100%;
         margin-top: 4rem;

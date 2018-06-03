@@ -40,6 +40,22 @@ h2 {
     max-width: 100px;
  }
 
+.image-container {
+    position: relative;
+}
+
+.profile-image {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -250px;
+ }
+
+ .profile-image img {
+     border-radius: 50%;
+     width: 300px;
+ }
+
 .menu-container {
     float: right;
     display: flex;
@@ -118,6 +134,12 @@ h2 {
 
 .active a {
     color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 button {
@@ -212,6 +234,10 @@ only screen and (min-device-pixel-ratio: 1.5){
     overflow-x:hidden;
   }
 
+  .button {
+      padding: 25px 50px;
+  }
+
 }
 
 @media (max-width: 1080px) {
@@ -289,6 +315,13 @@ only screen and (min-device-pixel-ratio: 1.5){
         left: 1.5rem;
         width: 75px;
     }
+    .profile-image {
+        margin-left: -100px;
+        margin-top: -175px;
+    }
+    .profile-image img {
+        width: 200px;
+    }
     .menu-container {
         text-align: center;
     }
@@ -303,6 +336,9 @@ only screen and (min-device-pixel-ratio: 1.5){
     .menu-container ul li {
         padding: 1rem 1rem;
         border-bottom: 2px solid #ffffff;
+    }
+    .flex-container {
+        flex-direction: column;
     }
     button {
         height: 60px;
