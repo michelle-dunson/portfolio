@@ -59,7 +59,7 @@ header {
 
  .container {
      width: 50%;
-     margin-top: 6rem;
+     margin-top: 10rem;
  }
 
  .container > p {
@@ -103,26 +103,39 @@ input[type=submit]:hover {
     color: #06A0A6;
 }
 
+a {
+    text-decoration: none;
+    color: #06A0A6;
+}
+
+@media (max-width: 980px) {
+    .container > p {
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 660px) {
     .profile-image {
-        position: relative;
-        left: 0;
+        margin-left: -100px;
+    }
+    .profile-image img {
+        width: 200px;
     }
     .flex-container {
         flex-direction: column;
     }
     .container {
         width: 100%;
+        margin-top: 4rem;
     }
     .container > p {
-        line-height: 2.5rem;
-        font-size: 1.5rem;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     .container > form {
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        margin: 1rem 1.2rem;
     }
     input[type=submit] {
         width: 100%;

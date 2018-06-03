@@ -26,7 +26,15 @@
                 </div>
             </nav>
             <div class="heading">
-                <span class="stay">Michelle is a </span><span class="scroll">Product Designer</span>
+                <p class="stay">Michelle is a </p>
+                <p>
+                    <span class="scroll">&thinsp;UX&thinsp;Designer</span>
+                    <span class="scroll">&thinsp;Coffee&thinsp;Addict</span>
+                    <span class="scroll">&thinsp;Product&thinsp;Designer</span>
+                    <span class="scroll">&thinsp;UI&thinsp;Designer</span>
+                    <span class="scroll">&thinsp;Rescue&thinsp;Dog&thinsp;Mom</span>
+                    <span class="scroll">&thinsp;Frontend&thinsp;Developer</span>
+                </p>
             </div>
         </header>
         <main>
@@ -72,7 +80,7 @@
                         <div class="timeline-content">
                             <div class="year">2013-2016</div>
                             <p class="bio">
-                                After college I moved to Los Angeles and found myself in the fast-paced world of cosmetics. I loved finding out what our customers wanted and designing campaigns around their needs, but I always felt like something was missing.
+                                After college I moved to Los Angeles and pursued a marketing career in the fast-paced world of cosmetics. I loved finding out what our customers wanted and designing campaigns around their needs, but I always felt like something was missing.
                             </p>
                         </div>
                     </li>
@@ -88,7 +96,7 @@
                         <div class="timeline-content">
                             <div class="year">2018</div>
                             <p class="bio">
-                                This realization led me to the UX/UI Design program at Bloc.io where I’m working on design projects end-to-end from research to development. As a Product Designer I’ve finally found that perfect balance between creative and technical, and I’m excited to start this next chapter in my life.
+                                This realization led me to the UX/UI Design program at <a href="https://www.bloc.io" target="_blank">Bloc.io</a> where I’m working on design projects end-to-end from research to development. As a Product Designer I’ve finally found that perfect balance between creative and technical, and I’m excited to start this next chapter in my life.
                             </p>
                         </div>
                     </li>
@@ -96,7 +104,8 @@
                 <p class="italic">To be continued...</p>
             </section>
             <section class="process">
-                <h2>My Design Process</h2>
+                <h2>Full Stack Designer</h2>
+                <p id="subtitle">I can take your project from ideation to live code.</p>
                 <div class="flex-container">
                     <div class="one-fourth">
                         <div class="icon">
@@ -128,6 +137,24 @@
                     </div>
                 </div>
             </section>
+            <section class="images">
+                <div class="flex-container">
+                    <div class="flex-row one-half">
+                        <div class="flex-column one-half">
+                            <div id="robot" class="half-height"></div>
+                            <div id="louie" class="half-height"></div>
+                        </div>
+                        <div id="graduation" class="one-half"></div>
+                    </div>
+                    <div class="flex-column one-half">
+                        <div class="flex-row half-height">
+                            <div id="california" class="one-half"></div>
+                            <div id="spencer" class="one-half"></div>
+                        </div>
+                        <div id="australia" class="half-height"></div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="chat">
@@ -137,12 +164,98 @@
             <div class="footer-content">
                 <p class="copyright">© 2018 Michelle Dunson</p>
                 <div class="footer-links">
-                    <a href="mailto:mdunson88@gmail.com"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/michelle-dunson-51141b120/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/meechellllle"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/michelle-dunson"><i class="fab fa-github"></i></a>
+                    <a href="mailto:mdunson88@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/michelle-dunson-51141b120/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/meechellllle" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/michelle-dunson" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </footer>
+        <script type="text/javascript">
+            var words = document.getElementsByClassName('scroll');
+            var wordArray = [];
+            var currentWord = 0;
+
+            words[currentWord].style.opacity = 1;
+            for (var i = 0; i < words.length; i++) {
+                splitLetters(words[i]);
+            }
+
+            function changeWord() {
+                var cw = wordArray[currentWord];
+                var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+                for (var i = 0; i < cw.length; i++) {
+                    animateLetterOut(cw, i);
+                }
+
+                for (var i = 0; i < nw.length; i++) {
+                    nw[i].className = 'letter behind';
+                    nw[0].parentElement.style.opacity = 1;
+                    animateLetterIn(nw, i);
+                }
+
+                currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+            }
+
+            function animateLetterOut(cw, i) {
+                setTimeout(function() {
+		                  cw[i].className = 'letter out';
+                      }, i*80);
+                  }
+
+                  function animateLetterIn(nw, i) {
+                      setTimeout(function() {
+		                        nw[i].className = 'letter in';
+                            }, 340+(i*80));
+                        }
+
+                        function splitLetters(word) {
+                            var content = word.innerHTML;
+                            word.innerHTML = '';
+                            var letters = [];
+                            for (var i = 0; i < content.length; i++) {
+                                var letter = document.createElement('span');
+                                letter.className = 'letter';
+                                letter.innerHTML = content.charAt(i);
+                                word.appendChild(letter);
+                                letters.push(letter);
+                            }
+
+                            wordArray.push(letters);
+                        }
+
+                        changeWord();
+                        setInterval(changeWord, 4000);
+
+            (function() {
+
+              'use strict';
+
+              var items = document.querySelectorAll(".timeline li");
+
+              function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                  rect.top >= 0 &&
+                  rect.left >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+              }
+
+              function callbackFunc() {
+                for (var i = 0; i < items.length; i++) {
+                  if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                  }
+                }
+              }
+
+              window.addEventListener("load", callbackFunc);
+              window.addEventListener("resize", callbackFunc);
+              window.addEventListener("scroll", callbackFunc);
+
+            })();
+        </script>
     </body>
 </html>

@@ -12,10 +12,48 @@ header {
     padding-top: 6rem;
     font-size: 3rem;
     text-align: center;
+    position: relative;
+}
+
+.stay {
+    position: absolute;
+    right: 50%;
+}
+
+.heading p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
 }
 
 .scroll {
-    color: #ffffff;
+  position: absolute;
+  left: 50%;
+  width: 500px;
+  opacity: 0;
+  color: #ffffff;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .profile-image {
@@ -26,7 +64,7 @@ header {
 }
 
 .profile-image img {
-    border-radius: 100%;
+    border-radius: 50%;
     width: 300px;
 }
 
@@ -45,72 +83,23 @@ span.teal {
     padding-top: 8rem;
 }
 
-.timeline-wrap {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.timeline-item{
-    list-style-type: none;
-    position: relative;
-    width: 10px;
-    height: 100%;
-    left: 50%;
-    margin-left: -20px;
-    padding-top: 1.5rem;
-    background: rgba(254,166,166,0.4);
-}
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #EF7D93;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 .timeline-content {
-    position: relative;
-    bottom: 0;
-    width: 500px;
+    box-shadow: -8px 20px 20px -5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem;
     border-radius: 4px;
     background: #ffffff;
 }
 
-.timeline-content::before {
-    content: '';
-    position: absolute;
-    bottom: 7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    left: 100px;
-    box-shadow: -5px 20px 35px -5px rgba(0, 0, 0, 0.3);
-}
-
-.timeline-item:nth-child(odd) .timeline-content::before {
-    left: -16px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #fcfcfc transparent transparent;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    left: -600px;
-    box-shadow: 5px 20px 35px -5px rgba(0, 0, 0, 0.3);
-}
-
-.timeline-item:nth-child(even) .timeline-content::before {
-    right: -16px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #fcfcfc;
+.timeline-item {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .year {
@@ -120,15 +109,30 @@ span.teal {
     color: #ffffff;
     background-color: #06A0A6;
     border-radius: 4px 4px 0 0;
-    text-align: right;
+    text-align: left;
     width: 100%;
-    padding: 0.25rem 1.5rem 0.25rem 0.25rem;
+    padding: 0.25rem 0.25rem 0.25rem 1.5rem;
     box-sizing: border-box;
 }
 
-.timeline-item:nth-child(odd) .year {
-    text-align: left;
-    padding-left: 1.5rem;
+.timeline-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline-item.in-view .timeline-content {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
 }
 
 .bio {
@@ -148,6 +152,11 @@ span.teal {
     padding-top: 2rem;
 }
 
+.bio a {
+    text-decoration: none;
+    color: #06A0A6;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -162,7 +171,13 @@ span.teal {
 }
 
 .process > h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+}
+
+#subtitle {
+    padding-bottom: 3.5rem;
+    font-size: 1.5rem;
+    margin-top: -0.75rem;
 }
 
 .one-fourth {
@@ -204,4 +219,222 @@ span.teal {
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 0 1rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.one-half {
+    width: 50%;
+}
+
+.half-height {
+    height: 50%;
+}
+
+#robot {
+    height: 300px;
+    background-image: url(../assets/images/robot.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#louie {
+    height: 300px;
+    background-image: url(../assets/images/louie.png);
+    background-size: cover;
+    background-position: left bottom;
+}
+
+#graduation {
+    height: 600px;
+    background-image: url(../assets/images/graduation.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+#california {
+    height: 300px;
+    background-image: url(../assets/images/california.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#spencer {
+    height: 300px;
+    background-image: url(../assets/images/spencer.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#australia {
+    height: 300px;
+    background-image: url(../assets/images/australia.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+@media (min-width: 1220px) {
+    .timeline-wrap {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .timeline-item {
+        list-style-type: none;
+        position: relative;
+        width: 10px;
+        height: 100%;
+        left: 50%;
+        margin-left: -25px;
+        padding-top: 1.5rem;
+        background: rgba(254,166,166,0.4);
+    }
+    .timeline-item::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #EF7D93;
+    }
+    .timeline-content {
+        position: relative;
+        bottom: 0;
+        width: 500px;
+        margin-bottom: 0;
+    }
+    .timeline-content::before {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    .timeline-item:nth-child(odd) .timeline-content {
+        left: 110px;
+        box-shadow: -8px 20px 20px -5px rgba(0, 0, 0, 0.3);
+    }
+    .timeline-item:nth-child(odd) .timeline-content::before {
+        left: -16px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #fcfcfc transparent transparent;
+    }
+    .timeline-item:nth-child(even) .timeline-content {
+        left: -600px;
+        box-shadow: 5px 20px 20px -3px rgba(0, 0, 0, 0.3);
+    }
+    .timeline-item:nth-child(even) .timeline-content::before {
+        right: -16px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent #fcfcfc;
+    }
+    .timeline-item:nth-child(even) .year {
+        text-align: right;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 661px) {
+    .one-fourth {
+        max-width: 300px;
+    }
+    .images {
+        max-height: 600px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 980px) {
+    .heading {
+        padding-top: 8rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .profile-image {
+        margin-left: -100px;
+    }
+    .profile-image img {
+        width: 200px;
+    }
+    .timeline {
+        padding-top: 4rem;
+    }
+    .timeline h2 {
+        font-size: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .year {
+        font-size: 2.5rem;
+    }
+    .bio {
+        font-size: 1rem;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .one-fourth {
+        padding-top: 2rem;
+    }
+    .heading {
+        font-size: 2rem;
+        text-align: left;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .heading p {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    .scroll {
+        left: 10%;
+        font-size: 1.8rem;
+    }
+    #subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 0;
+    }
+    .flex-column {
+        max-height: 300px;
+    }
+    .one-half {
+        width: 100%;
+    }
+    #graduation {
+        height: 300px;
+        background-position: center center;
+    }
+    #australia {
+        background-position: center center;
+    }
+    #spencer {
+        height: 150px;
+        background-position: center center;
+    }
 }
