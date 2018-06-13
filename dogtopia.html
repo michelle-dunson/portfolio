@@ -28,17 +28,15 @@
         </header>
         <main>
             <nav class="navbar secondary">
-                <div class="menu-container" aria-label="Menu">
-                    <ul class="navbar-nav" id="case-study-menu">
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Information Architecture</a></li>
-                        <li><a href="#">Wireframes & Testing</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="#">Visual Design</a></li>
-                        <li><a href="#">What I Learned</a></li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav" id="case-study-menu">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Information Architecture</a></li>
+                    <li><a href="#">Wireframes & Testing</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Visual Design</a></li>
+                    <li><a href="#">What I Learned</a></li>
+                </ul>
             </nav>
             <section class="overview">
                 <div class="center-container">
@@ -83,26 +81,26 @@
                     <div id="data" class="one-half">
                         <div class="flex-column white-bg">
                             <div class="flex-container">
-                                <div class="one-half">
+                                <div class="one-half center">
                                     <h1>89%</h1>
                                     <p>Have used a professional dog care service (i.e. not in home care) in the last year.</p>
                                 </div>
-                                <div class="one-half">
+                                <div class="one-half center">
                                     <h1>48%</h1>
                                     <p>Currently use a web or Yelp search to find dog care.</p>
                                 </div>
                             </div>
                             <div class="flex-container">
-                                <div class="one-half">
+                                <div class="one-half center">
                                     <h1>58%</h1>
                                     <p>Use an iPhone.</p>
                                 </div>
-                                <div class="one-half">
+                                <div class="one-half center">
                                     <h1>72%</h1>
                                     <p>Said reviews are the most important factor when choosing a daycare.</p>
                                 </div>
                             </div>
-                            <span>*Based on results from 31 survey respondents</span>
+                            <div class="note"><span>*Based on results from 31 survey respondents</span></div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +111,7 @@
                             <p>While there were no directly competing apps to research, I looked at apps that have a similar function (Yelp) and apps that focus on private dog care (Rover, Wag), to see how they handled the various user needs.</p>
                         </div>
                         <div class="one-half">
-                            <table class="white-bg">
+                            <table>
                                 <thead>
                                     <th></th>
                                     <th>Yelp</th>
@@ -123,40 +121,40 @@
                                 <tbody>
                                     <tr>
                                         <td>Map View Search</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="far fa-circle"></i></td>
                                     </tr>
                                     <tr>
                                         <td>List View Search</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Availability Calendar</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><i class="far fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-adjust"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Read & Add Reviews</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
                                     </tr>
                                     <tr>
                                         <td>See Prices</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><i class="far fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
+                                        <td><i class="fas fa-circle"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="legend">
-                                <span>No</span>
-                                <span>Yes</span>
-                                <span>Unclear</span>
+                                <span><i class="far fa-circle"></i> No</span>
+                                <span><i class="fas fa-circle"></i> Yes</span>
+                                <span><i class="fas fa-adjust"></i> Unclear</span>
                             </div>
                         </div>
                     </div>
@@ -324,8 +322,10 @@
                     <h2>What I Learned</h2>
                     <p class="left">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I had made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the resrvation process solved the usability issues.</p>
                 </div>
-                <a href="#">Previous Case Study</a>
-                <a href="#">Next Case Study</a>
+                <ul class="case-study-nav">
+                    <li><a href="#">Previous Case Study</a></li>
+                    <li><a href="#">Next Case Study</a></li>
+                </ul>
             </section>
         </main>
         <footer>
