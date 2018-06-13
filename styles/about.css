@@ -7,10 +7,7 @@ header {
  }
 
 .heading {
-    font-family: 'Muli';
-    font-weight: 700;
     padding-top: 6rem;
-    font-size: 3rem;
     text-align: center;
     position: relative;
 }
@@ -24,6 +21,9 @@ header {
     display: inline-block;
     vertical-align: top;
     margin: 0;
+    font-size: 3rem;
+    font-family: 'Muli';
+    font-weight: 700;
 }
 
 .scroll {
@@ -81,6 +81,7 @@ span.teal {
     margin-bottom: 3rem;
     border-radius: 4px;
     background: #ffffff;
+    font-size: 1.4rem;
 }
 
 .timeline-item {

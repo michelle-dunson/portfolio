@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Michelle Dunson - Product & Web Designer</title>
         <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Muli:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Muli:300,400,700|Lato:700|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -41,45 +41,47 @@
                 </div>
             </nav>
             <section class="overview">
-                <div class="about">
+                <div class="center-container">
                     <img src="" alt="dogtopia logo">
                     <p>Dogtopia is a mobile app which allows dog owners to find reliable, professional care for their dogs. A user can search for daycare, boarding, or grooming in their area, make a reservation, and pay.</p>
                 </div>
-                <div class="scope flex-container">
-                    <div class="flex-column">
+                <div class="flex-container grey-bg">
+                    <div class="flex-column scope">
                         <h3>Responsibilities</h3>
                         <p>UX Research, UX/UI Design, Branding, User Testing</p>
                     </div>
-                    <div class="flex-column">
+                    <div class="flex-column scope">
                         <h3>Duration</h3>
                         <p>8 weeks</p>
                     </div>
-                    <div class="flex-column">
+                    <div class="flex-column scope">
                         <h3>Tools</h3>
                         <p>Sketch, Adobe Illustrator, Maze, InVision, MyBalsamiq</p>
                     </div>
-                    <div class="flex-column">
+                    <div class="flex-column scope">
                         <h3>End Product</h3>
                         <button><a href="#" class="button">View Prototype</a></button>
                     </div>
                 </div>
-                <div class="flex-container">
-                    <img src="" alt="dogtopia mockup">
-                    <div class="problem">
+                <div class="flex-container reverse">
+                    <div class="two-thirds">
                         <h2>The Problem</h2>
                         <p>In very dog friendly cities, such as Los Angeles, numerous dog daycares and hotels have opened in recent years, but there is currently no centralized place to search for them. Additionally, many daycares do not list prices or availability online, and few offer online payment.</p>
+                    </div>
+                    <div class="one-third">
+                        <img src="" alt="dogtopia mockup">
                     </div>
                 </div>
             </section>
             <section class="research">
-                <div class="full-width-image"></div>
-                <div class="flex-container">
-                    <div class="survey">
+                <div id="dogtopia-survey" class="full-width-image"></div>
+                <div class="flex-container grey-bg">
+                    <div class="one-half margin-left">
                         <h2>User Survey</h2>
                         <p>To get an idea of what features users might want, and how they would use the app, I created a survey with questions about searching for care, frequency of use, what app features would be important to them, and which mobile OS they use.</p>
                     </div>
-                    <div class="data">
-                        <div class="flex-column">
+                    <div id="data" class="one-half">
+                        <div class="flex-column white-bg">
                             <div class="flex-container">
                                 <div class="one-half">
                                     <h1>89%</h1>
@@ -104,67 +106,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-container">
-                    <div class="table">
-                        <table>
-                            <thead>
-                                <th></th>
-                                <th>Yelp</th>
-                                <th>Rover</th>
-                                <th>Wag</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Map View Search</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>List View Search</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Availability Calendar</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Read & Add Reviews</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>See Prices</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="legend">
-                            <span>No</span>
-                            <span>Yes</span>
-                            <span>Unclear</span>
+                <div class="container">
+                    <div class="flex-container reverse">
+                        <div class="one-half">
+                            <h2>Competitive Analysis</h2>
+                            <p>While there were no directly competing apps to research, I looked at apps that have a similar function (Yelp) and apps that focus on private dog care (Rover, Wag), to see how they handled the various user needs.</p>
+                        </div>
+                        <div class="one-half">
+                            <table class="white-bg">
+                                <thead>
+                                    <th></th>
+                                    <th>Yelp</th>
+                                    <th>Rover</th>
+                                    <th>Wag</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Map View Search</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>List View Search</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Availability Calendar</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Read & Add Reviews</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>See Prices</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="legend">
+                                <span>No</span>
+                                <span>Yes</span>
+                                <span>Unclear</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="competitive-analysis">
-                        <h2>Competitive Analysis</h2>
-                        <p>While there were no directly competing apps to research, I looked at apps that have a similar function (Yelp) and apps that focus on private dog care (Rover, Wag), to see how they handled the various user needs.</p>
-                    </div>
                 </div>
-                <div>
-                    <h2>User Personas</h2>
-                    <p>To create user personas I selected three of the respondents from the survey and did a quick interview to discover more about them and their goals for using the app.</p>
-                    <div class="personas">
+                <div class="grey-bg">
+                    <div class="center-container">
+                        <h2>User Personas</h2>
+                        <p>To create user personas I selected three of the respondents from the survey and did a quick interview to discover more about them and their goals for using the app.</p>
+                    </div>
+                    <div class="flex-container white-bg">
                         <div class="user">
                             <img src="" alt="brenda">
-                            <h3>Brenda</h3>
-                            <p>44 y/o landscape designer</p>
+                            <h3 class="name">Brenda</h3>
+                            <p class="title">44 y/o landscape designer</p>
                             <h4>Goals</h4>
                             <p>Find daycare for her 6 year old poodle to exercise a few times a week near her current job.</p>
                             <h4>Frustrations</h4>
@@ -172,8 +178,8 @@
                         </div>
                         <div class="user">
                             <img src="" alt="clay">
-                            <h3>Clay</h3>
-                            <p>34 y/o sales director</p>
+                            <h3 class="name">Clay</h3>
+                            <p class="title">34 y/o sales director</p>
                             <h4>Goals</h4>
                             <p>Book boarding for his dog, Kobe, during his out of town sales calls without having to make a phone call.</p>
                             <h4>Frustrations</h4>
@@ -181,8 +187,8 @@
                         </div>
                         <div class="user">
                             <img src="" alt="sanja">
-                            <h3>Sanja</h3>
-                            <p>25 y/o junior designer</p>
+                            <h3 class="name">Sanja</h3>
+                            <p class="title">25 y/o junior designer</p>
                             <h4>Goals</h4>
                             <p>Find a daycare that offers a discount for frequent use because her rescue dog can’t stay home alone.</p>
                             <h4>Frustrations</h4>
@@ -192,8 +198,8 @@
                 </div>
             </section>
             <section class="information-architecture">
-                <div class="full-width-image">
-                    <div class="user-stories">
+                <div id="dogtopia-flows" class="full-width-image">
+                    <div id="user-stories" class="center-container">
                         <h2>User Stories & User Flows</h2>
                         <p>I created user stories based on the problem the app is aiming to solve, as well as features users requested in the user surveys. I then narrowed the scope down to the MVP (minimum viable product), and then created user flows for the three main tasks a user needs to complete: sign up, find a location, and make a reservation.</p>
                         <p>See all <a href="#">user stories</a> and <a href="#">user flows</a>.</p>
@@ -201,20 +207,22 @@
                 </div>
             </section>
             <section class="wireframes-testing">
-                <div class="full-width-image"></div>
-                <div class="flex-container">
-                    <div class="low-fidelity">
-                        <h2>Low-Fidelity Wireframes</h2>
-                        <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
-                    </div>
-                    <div class="lightbox">
-                        <img src="" alt="location-wireframe">
-                        <img src="" alt="map-wireframe">
-                        <a href="#">click to view more</a>
+                <div id="dogtopia-sketches" class="full-width-image"></div>
+                <div class="container">
+                    <div class="flex-container reverse">
+                        <div class="one-half">
+                            <h2>Low-Fidelity Wireframes</h2>
+                            <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
+                        </div>
+                        <div class="one-half lightbox">
+                            <img src="" alt="location-wireframe">
+                            <img src="" alt="map-wireframe">
+                            <a href="#">click to view more</a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-column">
-                    <div class="high-fidelity">
+                <div class="flex-column grey-bg">
+                    <div class="center-container">
                         <h2>High Fidelity Wireframes</h2>
                         <p>I expanded on my low-fidelity wireframes in Sketch adding some additional screens, and then used these wireframes to begin user testing. I utilized iOS Human Interaction Guidelines as well as several standard iOS app features like an icon-based toolbar and swipe to delete function, to keep navigation simple and intuitive.</p>
                     </div>
@@ -226,74 +234,83 @@
                         <a href="#">click to view more</a>
                     </div>
                 </div>
-                <div class="flex-container">
-                    <div class="user-testing first">
+                <div class="flex-container reverse">
+                    <div class="two-thirds first">
                         <h2>User Testing</h2>
                         <p>I created a user test based on the 3 main tasks. After the first round of user testing I found users were able to sign up and search for a location with ease, but were confused by the booking process. The original process attempted to gather too much information on a single screen and if a user missed a section they could not figure out how to complete the process.</p>
                     </div>
-                    <div class="user-testing second">
+                    <div class="two-thirds second">
                         <h2>User Testing</h2>
                         <p>I simplified the process by having the user select which service they were booking before moving to the reservation screen, and I modeled the booking calendar after the booking process on many airline apps, which the target users are familiar with. I then created a second user test for just this task with the same set of users. With this change the users were able to complete the booking process without confusion.</p>
                     </div>
-                    <div class="image-container first">
+                    <div class="one-third first">
                         <img src="" alt="user-test-round-1">
                         <span>Round 1</span>
                     </div>
-                    <div class="image-container second">
+                    <div class="one-third second">
                         <img src="" alt="user-test-round-2">
                         <span>Round 2</span>
                     </div>
                 </div>
             </section>
             <section class="branding">
-                <div class="full-width-image"></div>
-                <div class="flex-container">
-                    <div class="typography">
+                <div id="dogtopia-logo-sketches" class="full-width-image"></div>
+                <div class="flex-container grey-bg">
+                    <div class="two-thirds margin-left">
                         <h2>Typography</h2>
-                        <p></p>
+                        <p>I started the branding work by choosing Lato and Open Sans for the main typography - both clean, modern sans-serif fonts that would be easy to read on small screens and lend to the trustworthiness of the brand - and comfortaa in all lowercase for the logo as the round, geometric font is playful and fun like pets.</p>
                     </div>
-                    <div class="flex-column">
-                        <div class="typeface">
+                    <div class="one-third flex-column">
+                        <div class="lato typography white-bg">
                             <h4>Lato Bold</h4>
-                            <h4>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h4>
-                            <h4>abcdefghijklmnopqrstuvwxyz</h4>
-                            <h4>0123456789</h4>
+                            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                            <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                            <p>0 1 2 3 4 5 6 7 8 9</p>
                         </div>
-                        <div class="typeface">
+                        <div class="open-sans typography white-bg">
                             <h4>Open Sans</h4>
-                            <h4>ABCDEFGHIJKLMNOPQRSTUVWXYZ</h4>
-                            <h4>abcdefghijklmnopqrstuvwxyz</h4>
-                            <h4>0123456789</h4>
+                            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                            <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                            <p>0 1 2 3 4 5 6 7 8 9</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex-container">
-                    <div class="logo-colors">
-                    </div>
-                    <div class="flex-column">
-                        <div id="logos">
-                            <div class="logo" id="gradient">
-                                <img src="" alt="dogtopia-logo-white">
-                            </div>
-                            <div class="logo" id="orange-on-grey">
-                                <img src="" alt="dogtopia-logo-color">
-                            </div>
+                <div class="container">
+                    <div class="flex-container reverse">
+                        <div class="one-half">
+                            <h2>Logo & Colors</h2>
+                            <p>For the logo I started by writing down all the words I associated with the app (e.g. dog, doghouse, map, care, etc) and then sketched out several ideas that combined these elements. I liked the idea of incorporating a map pin since the main focus is finding locations.</p>
+                            <p>For the color palette I went with a combination of oranges and a pop of bright teal green, with greys and plenty of white space. Oranges and greens are often used with pet apps as they convey friendliness and quality.</p>
                         </div>
-                        <div id="color-palette">
-                            <div id="teal" class="color">#2ec4b6</div>
-                            <div id="orange" class="color">#f06449</div>
-                            <div id="red" class="color">#e7524e</div>
-                            <div id="black" class="color">#333333</div>
-                            <div id="grey" class="color">#e2e2e2</div>
-                            <div id="white" class="color">#ffffff</div>
+                        <div class="flex-column one-half">
+                            <div id="logos" class="flex-container">
+                                <div class="project-logo" id="gradient">
+                                    <img src="" alt="dogtopia-logo-white">
+                                </div>
+                                <div class="project-logo" id="orange-on-grey">
+                                    <img src="" alt="dogtopia-logo-color">
+                                </div>
+                            </div>
+                            <div id="color-palette" class="flex-column">
+                                <div class="flex-container">
+                                    <div id="teal" class="color">#2ec4b6</div>
+                                    <div id="orange" class="color">#f06449</div>
+                                    <div id="red" class="color">#e7524e</div>
+                                </div>
+                                <div class="flex-container">
+                                    <div id="black" class="color">#333333</div>
+                                    <div id="grey" class="color">#e2e2e2</div>
+                                    <div id="white" class="color">#ffffff</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="visual-design">
-                <div class="full-width-image"></div>
-                <div class="flex-container">
-                    <div class="mockups">
+                <div id="dogtopia-mockup" class="full-width-image"></div>
+                <div class="flex-container grey-bg">
+                    <div class="mockups margin-left">
                         <h2>Final Mockups</h2>
                         <p>I applied the branding to the wireframes for the final mock-ups. I focused most of the color use to the onboarding screens to draw users in and kept it limited within the app to emphasize navigation and CTAs. I included some dog sketches (created by Freepik) throughout the app to keep up the sense of playfulness.</p>
                         <button><a href="#" class="button">View Prototype</a></button>
@@ -302,9 +319,11 @@
                 </div>
             </section>
             <section class="what-i-learned">
-                <div class="full-width-image"></div>
-                <h2>What I Learned</h2>
-                <p>This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I had made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the resrvation process solved the usability issues.</p>
+                <div id="conclusion" class="full-width-image"></div>
+                <div class="center-container">
+                    <h2>What I Learned</h2>
+                    <p class="left">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I had made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the resrvation process solved the usability issues.</p>
+                </div>
                 <a href="#">Previous Case Study</a>
                 <a href="#">Next Case Study</a>
             </section>

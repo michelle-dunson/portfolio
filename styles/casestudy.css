@@ -1,0 +1,206 @@
+.container {
+    margin: 2rem;
+}
+
+.margin-left {
+    margin-left: 2rem;
+}
+
+.center-container {
+    max-width: 965px;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.one-half {
+    width: 50%;
+}
+
+.one-third {
+    width: 33%;
+}
+
+.two-thirds {
+    width: 66%;
+}
+
+.scope {
+    text-align: center;
+    width: 25%;
+}
+
+.scope p {
+    font-size: 1.125rem;
+}
+
+#user-stories {
+    background-color: rgba(51,51,51,0.75);
+    color: #ffffff;
+    border-radius: 4px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#user-stories p {
+    text-align: left;
+}
+
+#user-stories h2 {
+    color: #ffffff;
+}
+
+.user {
+    padding: 1.5rem;
+}
+
+.user p {
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+.user .title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3.name {
+    text-align: center;
+}
+
+.grey-bg {
+    background-color: rgba(226,226,226,0.75);
+}
+
+.white-bg {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 2rem;
+}
+
+.color {
+    width: 140px;
+    height: 140px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin: 1.25rem;
+}
+
+.left {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #2ec4b6;
+}
+
+.typography {
+    height: 300px;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+.typography h4 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: -1rem;
+}
+
+.lato h4,
+.lato p {
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+.open-sans h4,
+.open-sans p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.project-logo {
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 230px;
+    height: 230px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#gradient {
+    background: linear-gradient(to top right, #f06449, #e7524e);
+}
+
+#orange-on-grey {
+    background-color: #e2e2e2;
+}
+
+#teal {
+    background-color: #2ec4b6;
+}
+
+#orange {
+    background-color: #f06449;
+}
+
+#red {
+    background-color: #e7524e;
+}
+
+#black {
+    background-color: #333333;
+}
+
+#grey {
+    background-color: #e2e2e2;
+    color: #333333;
+}
+
+#white {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#dogtopia-survey {
+    background-image: url(../assets/images/dogtopia_survey.jpg);
+}
+
+#dogtopia-flows {
+    background-image: url(../assets/images/dogtopia_flows.png);
+}
+
+#dogtopia-sketches {
+    background-image: url(../assets/images/dogtopia_sketches.jpg);
+}
+
+#dogtopia-logo-sketches {
+    background-image: url(../assets/images/dogtopia_logos.jpg);
+}
+
+#dogtopia-mockup {
+    background-image: url(../assets/images/dogtopia_mockup.jpg);
+}
+
+#conclusion {
+    background-image: url(../assets/images/conclusion.jpg);
+}
+
+.full-width-image {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
