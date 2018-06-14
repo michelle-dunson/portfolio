@@ -144,7 +144,7 @@ header {
 .white-bg {
     background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin: 2rem;
 }
 
@@ -207,8 +207,24 @@ img.mockup {
 
 table {
     border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
+}
+
+thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 4px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
 }
 
 th {
@@ -217,7 +233,6 @@ th {
     font-size: 1.75rem;
     padding: 1rem;
     background-color: #06A0A6;
-    border-color: transparent;
 }
 
 tr {
@@ -262,8 +277,8 @@ h3.name {
 img.user-photo {
     border-radius: 50%;
     max-width: 250px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    margin-left: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 17%;
 }
 
 #user-stories {
@@ -289,6 +304,152 @@ img.user-photo {
 
 .lightbox {
     margin: 0 auto;
+}
+
+.lightbox > .column {
+  padding: 0 8px;
+}
+
+.lightbox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thumb {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  max-height: 80vh;
+  max-width: 300px;
+}
+
+.thumbnail-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  margin-top: -2rem;
+  max-height: 500px;
+  margin-bottom: 2rem;
+}
+
+.mySlides img {
+    height: 60vh;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .typography {
@@ -332,7 +493,7 @@ img.user-photo {
     box-sizing: border-box;
     width: 230px;
     height: 230px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding-left: 60px;
     padding-top: 50px;
     margin: 1.25rem;
@@ -350,7 +511,7 @@ img.user-photo {
     width: 140px;
     height: 140px;
     border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     color: #ffffff;
     text-align: center;
     box-sizing: border-box;

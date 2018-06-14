@@ -116,7 +116,7 @@
                         <p>While there were no directly competing apps to research, I looked at apps that have a similar function (Yelp) and apps that focus on private dog care (Rover, Wag), to see how they handled the various user needs.</p>
                     </div>
                     <div class="one-half">
-                        <table>
+                        <table cellspacing="0">
                             <thead>
                                 <th></th>
                                 <th>Yelp</th>
@@ -220,11 +220,57 @@
                             <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
                         </div>
                         <div class="one-half lightbox">
-                            <img src="assets/images/location_balsamic.png" class="mockup" alt="location-wireframe">
-                            <img src="assets/images/map_balsamic.png" class="mockup" alt="map-wireframe">
+                            <div class="two-column">
+                                <img src="assets/images/location_balsamic.png" onclick="openModal();currentSlide(1)" class="hover-shadow mockup" alt="location-wireframe">
+                            </div>
+                            <div class="two-column">
+                                <img src="assets/images/map_balsamic.png" onclick="openModal();currentSlide(2)" class="hover-shadow mockup" alt="map-wireframe">
+                            </div>
                         </div>
                     </div>
                     <a href="#">click to view more</a>
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="assets/images/location_balsamic.png">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="assets/images/map_balsamic.png">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="assets/images/sign_up_balsamic.png">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="assets/images/sign_in_balsamic.png">
+                        </div>
+                    </div>
+                    <div class="thumbnail-container">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                        <div class="thumbnails">
+                            <div class="thumb">
+                                <img class="demo" src="assets/images/location_balsamic_thumb.png" onclick="currentSlide(1)" alt="Location">
+                            </div>
+                            <div class="thumb">
+                                <img class="demo" src="assets/images/map_balsamic_thumb.png" onclick="currentSlide(2)" alt="Map">
+                            </div>
+                            <div class="thumb">
+                                <img class="demo" src="assets/images/sign_up_balsamic_thumb.png" onclick="currentSlide(3)" alt="Sign Up">
+                            </div>
+                            <div class="thumb">
+                                <img class="demo" src="assets/images/sign_in_balsamic_thumb.png" onclick="currentSlide(4)" alt="Sign In">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="grey-bg">
                     <div class="flex-column container">
@@ -336,7 +382,7 @@
                 <div id="conclusion" class="full-width-image"></div>
                 <div class="center container">
                     <h2>What I Learned</h2>
-                    <p class="left">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I had made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the resrvation process solved the usability issues.</p>
+                    <p class="left">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the reservation process solved the usability issues.</p>
                 </div>
                 <ul class="case-study-nav">
                     <li><a href="#">Previous Case Study</a></li>
@@ -371,6 +417,40 @@
                     navbar.classList.remove("sticky");
                 }
             }
+
+            function openModal() {
+                document.getElementById('myModal').style.display = "block";
+            }
+            function closeModal() {
+                document.getElementById('myModal').style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+                }
         </script>
     </body>
 </html>
