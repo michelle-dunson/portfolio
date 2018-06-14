@@ -219,33 +219,35 @@
                             <h2>Low-Fidelity Wireframes</h2>
                             <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
                         </div>
-                        <div class="one-half lightbox">
-                            <div class="two-column">
-                                <img src="assets/images/location_balsamic.png" onclick="openModal();currentSlide(1)" class="hover-shadow mockup" alt="location-wireframe">
+                        <div class="one-half flex-column">
+                            <div class="lightbox">
+                                <div class="two-column">
+                                    <img src="assets/images/location_balsamic.png" onclick="openModalOne();currentSlide(1)" class="hover-shadow mockup" alt="location-wireframe">
+                                </div>
+                                <div class="two-column">
+                                    <img src="assets/images/map_balsamic.png" onclick="openModalOne();currentSlide(2)" class="hover-shadow mockup" alt="map-wireframe">
+                                </div>
                             </div>
-                            <div class="two-column">
-                                <img src="assets/images/map_balsamic.png" onclick="openModal();currentSlide(2)" class="hover-shadow mockup" alt="map-wireframe">
-                            </div>
+                            <div class="modal-open" onclick="openModalOne();currentSlide(3)">click to view more</div>
                         </div>
                     </div>
-                    <a href="#">click to view more</a>
                 </div>
-                <div id="myModal" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div id="balsamicModal" class="modal">
+                    <span class="close cursor" onclick="closeModalOne()">&times;</span>
                     <div class="modal-content">
-                        <div class="mySlides">
+                        <div class="slides">
                             <div class="numbertext">1 / 4</div>
                             <img src="assets/images/location_balsamic.png">
                         </div>
-                        <div class="mySlides">
+                        <div class="slides">
                             <div class="numbertext">2 / 4</div>
                             <img src="assets/images/map_balsamic.png">
                         </div>
-                        <div class="mySlides">
+                        <div class="slides">
                             <div class="numbertext">3 / 4</div>
                             <img src="assets/images/sign_up_balsamic.png">
                         </div>
-                        <div class="mySlides">
+                        <div class="slides">
                             <div class="numbertext">4 / 4</div>
                             <img src="assets/images/sign_in_balsamic.png">
                         </div>
@@ -257,17 +259,17 @@
                             <p id="caption"></p>
                         </div>
                         <div class="thumbnails">
-                            <div class="thumb">
-                                <img class="demo" src="assets/images/location_balsamic_thumb.png" onclick="currentSlide(1)" alt="Location">
+                            <div class="thumbnail">
+                                <img class="thumb" src="assets/images/location_balsamic_thumb.png" onclick="currentSlide(1)" alt="Location">
                             </div>
-                            <div class="thumb">
-                                <img class="demo" src="assets/images/map_balsamic_thumb.png" onclick="currentSlide(2)" alt="Map">
+                            <div class="thumbnail">
+                                <img class="thumb" src="assets/images/map_balsamic_thumb.png" onclick="currentSlide(2)" alt="Map">
                             </div>
-                            <div class="thumb">
-                                <img class="demo" src="assets/images/sign_up_balsamic_thumb.png" onclick="currentSlide(3)" alt="Sign Up">
+                            <div class="thumbnail">
+                                <img class="thumb" src="assets/images/sign_up_balsamic_thumb.png" onclick="currentSlide(3)" alt="Sign Up">
                             </div>
-                            <div class="thumb">
-                                <img class="demo" src="assets/images/sign_in_balsamic_thumb.png" onclick="currentSlide(4)" alt="Sign In">
+                            <div class="thumbnail">
+                                <img class="thumb" src="assets/images/sign_in_balsamic_thumb.png" onclick="currentSlide(4)" alt="Sign In">
                             </div>
                         </div>
                     </div>
@@ -279,12 +281,62 @@
                             <p>I expanded on my low-fidelity wireframes in Sketch adding some additional screens, and then used these wireframes to begin user testing. I utilized iOS Human Interaction Guidelines as well as several standard iOS app features like an icon-based toolbar and swipe to delete function, to keep navigation simple and intuitive.</p>
                         </div>
                         <div class="lightbox">
-                            <img src="assets/images/map_wireframe.png" class="mockup" alt="map-wireframe">
-                            <img src="assets/images/location_wireframe.png" class="mockup" alt="location-wireframe">
-                            <img src="assets/images/sign_in_wireframe.png" class="mockup" alt="sign-in-wireframe">
-                            <img src="assets/images/profile_wireframe.png" class="mockup" alt="profile-wireframe">
+                            <div class="four-column">
+                                <img src="assets/images/map_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentSlide(1)" alt="Map">
+                            </div>
+                            <div class="four-column">
+                                <img src="assets/images/location_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentSlide(2)" alt="Location">
+                            </div>
+                            <div class="four-column">
+                                <img src="assets/images/sign_in_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentSlide(3)" alt="Sign In">
+                            </div>
+                            <div class="four-column">
+                                <img src="assets/images/profile_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentSlide(4)" alt="Profile">
+                            </div>
                         </div>
-                        <a href="#">click to view more</a>
+                        <div class="modal-open" onclick="openModalTwo();currentSlide(4)">click to view more</div>
+                    </div>
+                </div>
+                <div id="wireframeModal" class="modal">
+                    <span class="close cursor" onclick="closeModalTwo()">&times;</span>
+                    <div class="modal-content">
+                        <div class="images">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="assets/images/map_wireframe.png" class="mockup">
+                        </div>
+                        <div class="images">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="assets/images/location_wireframe.png" class="mockup">
+                        </div>
+                        <div class="images">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="assets/images/sign_in_wireframe.png" class="mockup">
+                        </div>
+                        <div class="images">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="assets/images/profile_wireframe.png" class="mockup">
+                        </div>
+                    </div>
+                    <div class="thumbnail-container">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="caption-container">
+                            <p id="captiontext"></p>
+                        </div>
+                        <div class="thumbnails">
+                            <div class="thumbnail">
+                                <img class="dots" src="assets/images/map_wireframe_thumb.png" onclick="currentSlide(1)" alt="Map">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="dots" src="assets/images/location_wireframe_thumb.png" onclick="currentSlide(2)" alt="Location">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="dots" src="assets/images/sign_in_wireframe_thumb.png" onclick="currentSlide(3)" alt="Sign In">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="dots" src="assets/images/profile_wireframe_thumb.png" onclick="currentSlide(4)" alt="Profile">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="flex-container reverse container">
@@ -418,26 +470,35 @@
                 }
             }
 
-            function openModal() {
-                document.getElementById('myModal').style.display = "block";
+            function openModalOne() {
+                document.getElementById('balsamicModal').style.display = "block";
             }
-            function closeModal() {
-                document.getElementById('myModal').style.display = "none";
+            function openModalTwo() {
+                document.getElementById('wireframeModal').style.display = "block";
+            }
+            function closeModalOne() {
+                document.getElementById('balsamicModal').style.display = "none";
+            }
+            function closeModalTwo() {
+                document.getElementById('wireframeModal').style.display = "none";
             }
 
             var slideIndex = 1;
-            showSlides(slideIndex);
+            showBalsamicSlides(slideIndex);
+            showWireframeSlides(slideIndex);
 
             function plusSlides(n) {
-                showSlides(slideIndex += n);
+                showBalsamicSlides(slideIndex += n);
+                showWireframeSlides(slideIndex += n);
             }
             function currentSlide(n) {
-                showSlides(slideIndex = n);
+                showBalsamicSlides(slideIndex = n);
+                showWireframeSlides(slideIndex = n);
             }
-            function showSlides(n) {
+            function showBalsamicSlides(n) {
                 var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
+                var slides = document.getElementsByClassName("slides");
+                var dots = document.getElementsByClassName("thumb");
                 var captionText = document.getElementById("caption");
                 if (n > slides.length) {slideIndex = 1}
                 if (n < 1) {slideIndex = slides.length}
@@ -450,7 +511,24 @@
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
                 captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            function showWireframeSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("images");
+                var dots = document.getElementsByClassName("dots");
+                var captionText = document.getElementById("captiontext");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
                 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
         </script>
     </body>
 </html>

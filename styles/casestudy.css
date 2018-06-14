@@ -18,7 +18,7 @@ header {
 
  a {
      text-decoration: none;
-     color: #2ec4b6;
+     color: #06A0A6;
  }
 
  .navbar.secondary {
@@ -68,7 +68,9 @@ header {
 
  #dogtopia-flows {
      background-image: url(../assets/images/dogtopia_flows.png);
+     background-attachment: scroll;
      position: relative;
+     height: 600px;
  }
 
  #dogtopia-sketches {
@@ -127,6 +129,10 @@ header {
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.one-half.flex-column {
+    padding-left: 2rem;
 }
 
 .one-third {
@@ -334,7 +340,7 @@ img.user-photo {
     text-align: center;
 }
 
-.thumb {
+.thumbnail {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -350,6 +356,16 @@ img.user-photo {
   height: 100%;
   overflow: auto;
   background-color: black;
+}
+
+.modal-open {
+    text-align: center;
+    color: #06A0A6;
+    padding-top: 1rem;
+}
+
+.modal-open:hover {
+    cursor: pointer;
 }
 
 .modal-content {
@@ -381,14 +397,16 @@ img.user-photo {
   cursor: pointer;
 }
 
-.mySlides {
+.slides,
+.images {
   display: none;
   margin-top: -2rem;
   max-height: 500px;
   margin-bottom: 2rem;
 }
 
-.mySlides img {
+.slides img
+.images img {
     height: 60vh;
 }
 
@@ -435,12 +453,13 @@ img.user-photo {
   color: white;
 }
 
-img.demo {
+img.thumb,
+img.dots {
   opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.thumb:hover {
   opacity: 1;
 }
 
