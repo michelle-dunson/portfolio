@@ -22,9 +22,9 @@ header {
  }
 
  .navbar.secondary {
-     background-color: #f0f0f0;
+     background-color: #333333;
      margin: 0 auto;
-     z-index: 1;
+     z-index: 4;
  }
 
  #case-study-menu {
@@ -36,7 +36,7 @@ header {
      font-size: 1.125rem;
      margin-left: 0.75rem;
      margin-right: 0.75rem;
-     color: #333333;
+     color: #ffffff;
  }
 
  #case-study-menu li {
@@ -47,10 +47,6 @@ header {
  #case-study-menu li:last-child {
      margin-right: 5rem;
  }
-
- .content {
-     padding: 16px;
-}
 
  .sticky {
      position: fixed;
@@ -348,7 +344,7 @@ img.user-photo {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -469,6 +465,97 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.slider-contents {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.dot {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    right: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 1px solid #06A0A6;
+    border-radius: 50%;
+}
+
+.dot:last-child {
+    margin-left: 2rem;
+}
+
+.dot.green {
+    background-color: #06A0A6;
+}
+
+.fas.fa-angle-right {
+    margin-right: 2rem;
+}
+
+.fas.fa-angle-left,
+.fas.fa-angle-right {
+    font-size: 2rem;
+    color: #333333;
+}
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2 {
+    z-index: 3;
+    opacity: 1;
+}
+
+.slider-text {
+    max-width: 60%;
+    padding-right: 2rem;
+}
+
+.slider-image {
+    display: block;
+    text-align: center;
+    padding-right: 6rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.slider-image p {
+    font-size: 1rem;
 }
 
 .typography {
