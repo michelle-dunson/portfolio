@@ -317,6 +317,7 @@ span.teal {
     .scroll {
         margin-left: -145px !important;
         margin-top: -115px;
+        font-size: 2.25rem;
     }
     .timeline {
         padding-top: 4rem;
@@ -372,7 +373,7 @@ span.teal {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .mobile {
         font-size: 2.5rem;
     }
