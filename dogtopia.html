@@ -44,7 +44,7 @@
                     <img src="assets/images/dogtopia_logo.png" alt="dogtopia logo">
                     <p>Dogtopia is a mobile app which allows dog owners to find reliable, professional care for their dogs. A user can search for daycare, boarding, or grooming in their area, make a reservation, and pay.</p>
                 </div>
-                <div class="grey-bg flex-container container">
+                <div id="scope" class="grey-bg grid-container container">
                     <div class="scope">
                         <h3>Responsibilities</h3>
                         <p>UX Research, UX/UI Design, Branding, User Testing</p>
@@ -206,11 +206,11 @@
                         <h2>Low-Fidelity Wireframes</h2>
                         <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
                     </div>
-                    <div class="lightbox item-8">
-                        <div class="two-column">
+                    <div class="lightbox flex-container item-8">
+                        <div>
                             <img src="assets/images/location_balsamic.png" onclick="openModalOne();currentBalsamicSlide(1)" class="hover-shadow mockup" alt="location-wireframe">
                         </div>
-                        <div class="two-column mobile-hide">
+                        <div class="mobile-hide">
                             <img src="assets/images/map_balsamic.png" onclick="openModalOne();currentBalsamicSlide(2)" class="hover-shadow mockup" alt="map-wireframe">
                         </div>
                     </div>
@@ -264,17 +264,17 @@
                             <h2>High Fidelity Wireframes</h2>
                             <p>I expanded on my low-fidelity wireframes in Sketch adding some additional screens, and then used these wireframes to begin user testing. I utilized iOS Human Interaction Guidelines as well as several standard iOS app features like an icon-based toolbar and swipe to delete function, to keep navigation simple and intuitive.</p>
                         </div>
-                        <div class="lightbox">
-                            <div class="one-fourth">
+                        <div class="lightbox flex-container">
+                            <div>
                                 <img src="assets/images/map_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentWireframeSlide(1)" alt="Map">
                             </div>
-                            <div class="one-fourth mobile-hide">
+                            <div>
                                 <img src="assets/images/location_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentWireframeSlide(2)" alt="Location">
                             </div>
-                            <div class="one-fourth mobile-hide">
+                            <div class="mobile-hide">
                                 <img src="assets/images/sign_in_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentWireframeSlide(3)" alt="Sign In">
                             </div>
-                            <div class="one-fourth mobile-hide">
+                            <div class="mobile-hide">
                                 <img src="assets/images/profile_wireframe.png" class="hover-shadow mockup" onclick="openModalTwo();currentWireframeSlide(4)" alt="Profile">
                             </div>
                         </div>
@@ -323,46 +323,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="container slider">
-                    <span id="slider-item-1"></span>
-                    <span id="slider-item-2"></span>
-                    <div class="slider-contents slider-item-1">
-                        <div class="slider-image">
+                <div class="container center">
+                    <h2>User Testing</h2>
+                    <p class="user-testing">I created a user test based on the 3 main tasks. After the first round of user testing I found users were able to sign up and search for a location with ease, but were confused by the booking process. The original process attempted to gather too much information on a single screen and if a user missed a section they could not figure out how to complete the process.</p>
+                    <div class="flex-container">
+                        <div>
                             <img src="assets/images/user_test_1.png" class="mockup" alt="user-test-round-1">
                             <p>Round 1</p>
                         </div>
-                        <div class="slider-text">
-                            <h2>User Testing</h2>
-                            <p>I created a user test based on the 3 main tasks. After the first round of user testing I found users were able to sign up and search for a location with ease, but were confused by the booking process. The original process attempted to gather too much information on a single screen and if a user missed a section they could not figure out how to complete the process.</p>
-                        </div>
-                        <a href="#slider-item-2"><i class="fas fa-angle-right"></i></a>
-                        <a class="dot green" href="#slider-item-1"></a>
-                        <a class="dot" href="#slider-item-2"></a>
-                    </div>
-                    <div class="slider-contents slider-item-2">
-                        <a href="#slider-item-1"><i class="fas fa-angle-left"></i></a>
-                        <div class="slider-image">
+                        <div>
                             <img src="assets/images/user_test_2.png" class="mockup" alt="user-test-round-2">
                             <p>Round 2</p>
                         </div>
-                        <div class="slider-text">
-                            <h2>User Testing</h2>
-                            <p>I simplified the process by having the user select which service they were booking before moving to the reservation screen, and I modeled the booking calendar after the booking process on many airline apps, which the target users are familiar with. I then created a second user test for just this task with the same set of users. With this change the users were able to complete the booking process without confusion.</p>
-                        </div>
-                        <a class="dot" href="#slider-item-1"></a>
-                        <a class="dot green" href="#slider-item-2"></a>
                     </div>
+                    <p class="user-testing">I simplified the process by having the user select which service they were booking before moving to the reservation screen, and I modeled the booking calendar after the booking process on many airline apps, which the target users are familiar with. I then created a second user test for just this task with the same set of users. With this change the users were able to complete the booking process without confusion.</p>
                 </div>
             </section>
             <a name="branding"></a>
             <section class="branding">
                 <div id="dogtopia-logo-sketches" class="full-width-image"></div>
-                <div class="grey-bg container">
-                    <div class="center">
+                <div class="grey-bg grid-container container">
+                    <div class="item-10">
                         <h2>Typography</h2>
                         <p>I started the branding work by choosing Lato and Open Sans for the main typography - both clean, modern sans-serif fonts that would be easy to read on small screens and lend to the trustworthiness of the brand - and comfortaa in all lowercase for the logo as the round, geometric font is playful and fun like pets.</p>
                     </div>
-                    <div class="flex-container">
+                    <div class="item-11 flex-container">
                         <div class="lato typography white-bg">
                             <h4>Lato Bold</h4>
                             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -378,12 +363,12 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-10">
+                    <div class="item-12">
                         <h2>Logo & Colors</h2>
                         <p>For the logo I started by writing down all the words I associated with the app (e.g. dog, doghouse, map, care, etc) and then sketched out several ideas that combined these elements. I liked the idea of incorporating a map pin since the main focus is finding locations.</p>
                         <p>For the color palette I went with a combination of oranges and a pop of bright teal green, with greys and plenty of white space. Oranges and greens are often used with pet apps as they convey friendliness and quality.</p>
                     </div>
-                    <div class="flex-column item-11">
+                    <div class="flex-column item-13">
                         <div id="logos" class="flex-container">
                             <div class="project-logo" id="gradient">
                                 <img src="assets/images/dogtopia_white.png" alt="dogtopia-logo-white">
@@ -431,13 +416,13 @@
             <a name="learned"></a>
             <section class="what-i-learned">
                 <div id="conclusion" class="full-width-image"></div>
-                <div class="center container">
+                <div class="container center">
                     <h2>What I Learned</h2>
-                    <p class="left">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the reservation process solved the usability issues.</p>
+                    <p>This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the reservation process solved the usability issues.</p>
                 </div>
                 <ul class="case-study-nav">
-                    <li><a href="#">Previous Case Study</a></li>
-                    <li><a href="#">Next Case Study</a></li>
+                    <li><a class="hvr-underline-from-center" href="#">blocbox</a></li>
+                    <li><a class="active hvr-underline-from-center" href="dogtopia.html">dogtopia</a></li>
                 </ul>
             </section>
         </main>
