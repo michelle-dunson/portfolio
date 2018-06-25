@@ -77,6 +77,13 @@ ul {
     height: 600px;
 }
 
+#blocbox-flows {
+    background-image: url(../assets/images/blocbox/blocbox_flows.png);
+    background-attachment: scroll;
+    position: relative;
+    height: 600px;
+}
+
 #dogtopia-sketches {
     background-image: url(../assets/images/dogtopia/dogtopia_sketches.jpg);
 }
@@ -277,8 +284,9 @@ img.user-photo {
     line-height: 1.25rem;
 }
 
-.user-text {
+.user-text li {
     font-size: 1.125rem;
+    font-weight: 300;
     text-align: left;
 }
 
@@ -574,6 +582,22 @@ img.dots {
     background-color: #333333;
 }
 
+#purple {
+    background-color: #534365;
+}
+
+#blue {
+    background-color: #363490;
+}
+
+#green {
+    background-color: #4dd5b0;
+}
+
+#lavendar {
+    background-color: #705ab2;
+}
+
 #grey {
     background-color: #e2e2e2;
     color: #333333;
@@ -624,9 +648,15 @@ a.active {
     .item-13 {
         max-width: 550px;
     }
+    .user {
+        width: 33%;
+    }
 }
 
 @media (max-width: 1000px) {
+    ul.user-text {
+        margin-left: 0.5rem;
+    }
     table {
         margin-bottom: 1rem;
     }
