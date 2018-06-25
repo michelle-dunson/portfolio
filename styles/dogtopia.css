@@ -67,26 +67,26 @@ ul {
 }
 
 #dogtopia-survey {
-    background-image: url(../assets/images/dogtopia_survey.jpg);
+    background-image: url(../assets/images/dogtopia/dogtopia_survey.jpg);
 }
 
 #dogtopia-flows {
-    background-image: url(../assets/images/dogtopia_flows.png);
+    background-image: url(../assets/images/dogtopia/dogtopia_flows.png);
     background-attachment: scroll;
     position: relative;
     height: 600px;
 }
 
 #dogtopia-sketches {
-    background-image: url(../assets/images/dogtopia_sketches.jpg);
+    background-image: url(../assets/images/dogtopia/dogtopia_sketches.jpg);
 }
 
 #dogtopia-logo-sketches {
-    background-image: url(../assets/images/dogtopia_logos.jpg);
+    background-image: url(../assets/images/dogtopia/dogtopia_logos.jpg);
 }
 
 #dogtopia-mockup {
-    background-image: url(../assets/images/dogtopia_mockup.jpg);
+    background-image: url(../assets/images/dogtopia/dogtopia_mockup.jpg);
 }
 
 #conclusion {
@@ -330,6 +330,14 @@ img.user-photo {
 
 .lightbox {
     margin: 0 auto;
+}
+
+.lightbox img:hover {
+    cursor: pointer;
+}
+
+.grey-bg > .container > .lightbox img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .lightbox:after {
