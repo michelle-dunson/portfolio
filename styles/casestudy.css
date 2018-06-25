@@ -92,6 +92,10 @@ ul {
     background-image: url(../assets/images/dogtopia/dogtopia_logos.jpg);
 }
 
+#blocbox-logo-sketches {
+    background-image: url(../assets/images/blocbox/blocbox_logos.jpg);
+}
+
 #dogtopia-mockup {
     background-image: url(../assets/images/dogtopia/dogtopia_mockup.jpg);
 }
@@ -110,6 +114,10 @@ ul {
 
 img.mockup {
     max-height: 500px;
+}
+
+img.blocbox-mockup {
+    width: 600px;
 }
 
 .grid-container {
@@ -338,6 +346,7 @@ img.user-photo {
 
 .lightbox {
     margin: 0 auto;
+    text-align: center;
 }
 
 .lightbox img:hover {
@@ -548,6 +557,36 @@ img.dots {
 
 #orange-on-grey img {
     background-color: #e2e2e2;
+}
+
+.blocbox-logo img {
+    width: 125px;
+}
+
+.blocbox-logo {
+    display: flex;
+    border-radius: 4px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.blocbox-logo h3 {
+    padding-left: 20px;
+    font-size: 36px;
+}
+
+#light {
+    background-color: #e2e2e2;
+}
+
+#dark {
+    background-color: #534365;
+}
+
+#dark h3 {
+    color: #ffffff;
 }
 
 #color-palette {
