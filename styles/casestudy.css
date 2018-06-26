@@ -2,6 +2,13 @@ header {
     min-height: 600px;
     background-size: cover;
     background-color: rgba(239,125,147,0.75);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+ }
+
+ #dogtopia {
+     background-image: url(../assets/images/dogtopia/dogtopia_header.jpg);
  }
 
  h1, h2 {
@@ -292,7 +299,7 @@ img.user-photo {
     line-height: 1.25rem;
 }
 
-.user-text li {
+.user-text li, p.user-text {
     font-size: 1.125rem;
     font-weight: 300;
     text-align: left;
@@ -364,7 +371,7 @@ img.user-photo {
 }
 .thumbnails {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .thumbnail {
@@ -428,6 +435,7 @@ img.user-photo {
 .images {
   display: none;
   margin-top: -5rem;
+  text-align: center;
 }
 
 .slides img
@@ -483,7 +491,8 @@ img.dots {
 }
 
 .active,
-.thumb:hover {
+.thumb:hover,
+.dots:hover {
   opacity: 1;
 }
 
