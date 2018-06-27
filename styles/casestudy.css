@@ -73,6 +73,10 @@ ul {
     padding-top: 60px;
 }
 
+#case-study-menu li.active a {
+    border-bottom: 3px solid #EF7D93;
+}
+
 #dogtopia-survey {
     background-image: url(../assets/images/dogtopia/dogtopia_survey.jpg);
 }
