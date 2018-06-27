@@ -342,7 +342,6 @@ img.user-photo {
 
 .grey-bg > .container > .flex-container {
     justify-content: center;
-    max-width: 90%;
 }
 
 .grey-bg > .container > .flex-container div,
@@ -503,6 +502,7 @@ img.dots {
 
 .container > .flex-container p {
     font-size: 1rem;
+    margin: 0;
 }
 
 .item-10 {
@@ -657,7 +657,6 @@ img.dots {
 }
 
 .image-container {
-    width: 100%;
     margin-top: 3rem;
 }
 
@@ -742,9 +741,15 @@ a.active {
     p.copyright {
         line-height: 1rem;
     }
+    .one-third {
+        width: 33%;
+    }
 }
 
 @media (max-width: 680px) {
+    #dogtopia {
+        background-position: 75%;
+    }
     h1 {
         margin-top: 2rem;
     }
