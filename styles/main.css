@@ -157,6 +157,10 @@ p {
     justify-content: space-between;
 }
 
+.container {
+    padding: 3rem;
+}
+
 button {
     width: 300px;
     height: 70px;
@@ -257,6 +261,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 @media (max-width: 1080px) {
     h2 {
         font-size: 2rem;
+        margin-bottom: 0.5rem;;
     }
 }
 
@@ -324,6 +329,9 @@ only screen and (min-device-pixel-ratio: 1.5){
     .navbar .logo {
         left: 1.5rem;
         width: 75px;
+    }
+    .container {
+        padding: 2rem 1.5rem;
     }
     .profile-image {
         margin-left: -100px;
