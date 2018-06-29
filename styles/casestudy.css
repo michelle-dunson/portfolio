@@ -410,7 +410,6 @@ img.user-photo {
   margin: auto;
   padding: 0;
   height: 70vh;
-  max-width: 300px;
 }
 
 .thumbnail-container {
@@ -772,6 +771,13 @@ a.active {
     }
     img.blocbox-mockup {
         width: 90vw;
+    }
+    .thumbnails {
+        overflow-x: scroll;
+    }
+    .thumbnail {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
     .flex-container {
         justify-content: center;
