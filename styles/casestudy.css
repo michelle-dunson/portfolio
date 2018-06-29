@@ -1,9 +1,9 @@
 header {
-    min-height: 600px;
+    min-height: 500px;
     background-size: cover;
     background-color: rgba(239,125,147,0.75);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
  }
 
@@ -762,9 +762,6 @@ a.active {
 }
 
 @media (max-width: 680px) {
-    #dogtopia {
-        background-position: 75%;
-    }
     #blocbox-logo-sketches {
         background-position: 90%;
     }
