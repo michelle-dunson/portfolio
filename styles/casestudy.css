@@ -1,6 +1,5 @@
 header {
     min-height: 500px;
-    background-size: cover;
     background-color: rgba(239,125,147,0.75);
     background-repeat: no-repeat;
     background-position: center top;
@@ -496,6 +495,10 @@ img.dots {
 .thumb:hover,
 .dots:hover {
   opacity: 1;
+}
+
+.user-testing {
+    text-align: left;
 }
 
 .grey-bg.container > .flex-container,
