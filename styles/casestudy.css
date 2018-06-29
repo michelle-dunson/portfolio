@@ -501,6 +501,10 @@ img.dots {
     text-align: left;
 }
 
+video {
+    width: 80vw;
+}
+
 .grey-bg.container > .flex-container,
 .container > .flex-container {
     justify-content: center;
@@ -812,6 +816,9 @@ a.active {
     }
     .lightbox > div:nth-child(2) {
         display: none;
+    }
+    video {
+        width: 90vw;
     }
     .typography {
         margin: 1rem 0;
