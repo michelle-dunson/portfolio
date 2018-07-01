@@ -7,7 +7,7 @@ header {
  }
 
 .heading {
-    padding-top: 6rem;
+    padding-top: 100px;
     text-align: center;
     position: relative;
 }
@@ -21,7 +21,7 @@ header {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    font-size: 3rem;
+    font-size: 48px;
     font-family: 'Muli';
     font-weight: 700;
 }
@@ -58,7 +58,7 @@ header {
 
 h2 {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 30px;
 }
 
 span.teal {
@@ -67,8 +67,8 @@ span.teal {
 
 .timeline {
     position: relative;
-    padding-bottom: 4rem;
-    padding-top: 8rem;
+    padding-bottom: 65px;
+    padding-top: 125px;
 }
 
 .timeline ul {
@@ -78,7 +78,7 @@ span.teal {
 
 .timeline-content {
     box-shadow: -8px 20px 20px -5px rgba(0, 0, 0, 0.3);
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
     border-radius: 4px;
     background: #ffffff;
     font-size: 1.4rem;
@@ -94,13 +94,13 @@ span.teal {
 .year {
     font-family: 'Muli';
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 48px;
     color: #ffffff;
     background-color: #06A0A6;
     border-radius: 4px 4px 0 0;
     text-align: left;
     width: 100%;
-    padding: 0.25rem 0.25rem 0.25rem 1.5rem;
+    padding: 5px 5px 5px 25px;
     box-sizing: border-box;
 }
 
@@ -126,8 +126,8 @@ span.teal {
 
 .bio {
     width: 90%;
-    line-height: 1.5rem;
-    padding: 0 1rem 1rem 1.5rem;
+    line-height: 24px;
+    padding: 0 16px 16px 24px;
 }
 
 .italic {
@@ -136,9 +136,9 @@ span.teal {
     font-style: italic;
     width: 300px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 16px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 30px;
 }
 
 .bio a {
@@ -223,7 +223,7 @@ span.teal {
         height: 100%;
         left: 50%;
         margin-left: -5px;
-        padding-top: 1.5rem;
+        padding-top: 25px;
         background: rgba(254,166,166,0.4);
     }
     .timeline-item::after {
@@ -271,7 +271,7 @@ span.teal {
     }
     .timeline-item:nth-child(even) .year {
         text-align: right;
-        padding-right: 1.5rem;
+        padding-right: 25px;
     }
 }
 
@@ -290,14 +290,14 @@ span.teal {
 
 @media (max-width: 980px) {
     .heading {
-        padding-top: 8rem;
-        font-size: 2.5rem;
+        padding-top: 130px;
+        font-size: 40px;
     }
 }
 
 @media (max-width: 850px) {
     .heading {
-        font-size: 2rem;
+        font-size: 32px;
     }
 }
 
@@ -306,37 +306,37 @@ span.teal {
         display: none !important;
     }
     .mobile {
-        font-size: 2.75rem;
+        font-size: 42px;
         text-align: center;
         font-family: 'Muli';
         font-weight: 700;
-        padding-top: 6rem;
+        padding-top: 100px;
         padding-bottom: 0;
         margin: 0;
     }
     .scroll {
         margin-left: -145px !important;
         margin-top: -115px;
-        font-size: 2.25rem;
+        font-size: 36px;
     }
     .timeline {
-        padding-top: 4rem;
+        padding-top: 65px;
     }
     .timeline h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
         margin: 0 auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .timeline ul {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .year {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .bio {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .flex-column {
         max-height: 300px;
@@ -375,10 +375,10 @@ span.teal {
 
 @media (max-width: 425px) {
     .mobile {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .scroll {
-        font-size: 1.7rem;
+        font-size: 28px;
         margin-left: -130px !important;
     }
 }

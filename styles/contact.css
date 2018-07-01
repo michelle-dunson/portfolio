@@ -22,8 +22,8 @@ header {
  .greeting {
      font-family: 'Muli';
      font-weight: 700;
-     padding-top: 4rem;
-     font-size: 3rem;
+     padding-top: 65px;
+     font-size: 48px;
      text-align: center;
  }
 
@@ -39,82 +39,81 @@ header {
      animation: slidein 7s forwards;
  }
 
- .container {
+ .reveal > span {
+     color: #ffffff;
+ }
+
+ .flex-container.container {
+     padding-top: 100px;
+ }
+
+ .hello, .form {
      width: 50%;
-     margin-top: 10rem;
  }
 
- .container > p {
+ .hello > p {
      max-width: 540px;
-     line-height: 2.75rem;
-     font-size: 1.75rem;
+     line-height: 44px;
+     font-size: 28px;
      margin-top: 0;
-     margin-left: 4rem;
-     margin-right: 1rem;
- }
-
- .container > form {
-     margin-right: 4rem;
-     margin-left: 1rem;
  }
 
  input[type=text], select, textarea {
+    font-family: 'Montserrat';
     width: 100%;
-    padding: 1rem;
+    padding: 15px;
     border: 1px solid #e2e2e2;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     resize: vertical;
 }
 
 input[type=submit] {
-    background-color: #06A0A6;
-    color: white;
+    font-family: 'Montserrat';
+    border: 3px solid #06A0A6;
+    color: #06A0A6;
     width: 300px;
     height: 60px;
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background: rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 3px #06A0A6;
-    color: #06A0A6;
+    background-color: #06A0A6;
+    color: #ffffff;
 }
 
-.container a {
+.hello a {
     text-decoration: none;
     color: #06A0A6;
 }
 
 @media (max-width: 980px) {
-    .container > p {
-        line-height: 2.5rem;
-        font-size: 1.5rem;
+    .hello > p {
+        line-height: 40px;
+        font-size: 24px;
     }
 }
 
 @media (max-width: 680px) {
-    .container {
+    .hello, .form {
         width: 100%;
-        margin-top: 4rem;
     }
-    .container > p {
+    .hello > p {
         margin: 0 auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 32px;
+        padding-right: 32px;
     }
-    .container > form {
-        margin: 1rem 1.2rem;
+    .form > form {
+        margin: 15px 20px;
     }
     input[type=submit] {
         width: 100%;
     }
     .greeting {
-        font-size: 2rem;
-        padding-top: 8rem;
+        font-size: 32px;
+        padding-top: 130px;
     }
 }

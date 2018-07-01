@@ -40,34 +40,37 @@
             </nav>
             <a name="overview"></a>
             <section class="overview">
-                <div id="about" class="center container">
-                    <img src="assets/images/dogtopia/dogtopia_logo.png" alt="dogtopia logo">
-                    <p>Dogtopia is a mobile app which allows dog owners to find reliable, professional care for their dogs. A user can search for daycare, boarding, or grooming in their area, make a reservation, and pay.</p>
+                <div class="center container">
+                    <div class="about">
+                        <img src="assets/images/dogtopia/dogtopia_logo.png" alt="dogtopia logo">
+                        <p>Dogtopia is a mobile app which allows dog owners to find reliable, professional care for their dogs. A user can search for daycare, boarding, or grooming in their area, make a reservation, and pay.</p>
+                    </div>
+                    <div class="about">
+                        <div class="button"><a href="https://invis.io/NDGE4NZFU83#/305241574_Welcome_Screen_1" target="_blank">View Prototype</a></div>
+                    </div>
                 </div>
-                <div id="scope" class="grey-bg grid-container container">
-                    <div class="scope">
-                        <h3>Responsibilities</h3>
-                        <p>UX Research, UX/UI Design, Branding, User Testing</p>
-                    </div>
-                    <div class="scope">
-                        <h3>Duration</h3>
-                        <p>8 weeks</p>
-                    </div>
-                    <div class="scope">
-                        <h3>Tools</h3>
-                        <p>Sketch, Adobe Illustrator, Maze, InVision, MyBalsamiq</p>
-                    </div>
-                    <div class="scope">
-                        <h3>End Product</h3>
-                        <button><a href="https://invis.io/NDGE4NZFU83#/305241574_Welcome_Screen_1" target="_blank" class="button">View Prototype</a></button>
+                <div id="scope" class="grey-bg container">
+                    <div class="flex-container no-wrap">
+                        <div class="scope">
+                            <h5>Duration</h5>
+                            <p>8 weeks</p>
+                        </div>
+                        <div class="scope">
+                            <h5>Responsibilities</h5>
+                            <p>User Research, UX/UI Design, Branding</p>
+                        </div>
+                        <div class="scope">
+                            <h5>Tools</h5>
+                            <p>Sketch, Adobe Illustrator, Maze, InVision, MyBalsamiq</p>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-1">
+                    <div class="item-1 right">
                         <h2>The Problem</h2>
                         <p>In very dog friendly cities, such as Los Angeles, numerous dog daycares and hotels have opened in recent years, but there is currently no centralized place to search for them. Additionally, many daycares do not list prices or availability online, and few offer online payment.</p>
                     </div>
-                    <div class="item-2">
+                    <div class="item-2 left">
                         <img src="assets/images/dogtopia/dogtopia_mockup.png" class="mockup" alt="dogtopia mockup">
                     </div>
                 </div>
@@ -76,11 +79,11 @@
             <section class="research">
                 <div id="dogtopia-survey" class="full-width-image"></div>
                 <div class="grid-container grey-bg container">
-                    <div class="item-3">
+                    <div class="item-3 left">
                         <h2>User Survey</h2>
                         <p>To get an idea of what features users might want, and how they would use the app, I created a survey with questions about searching for care, frequency of use, what app features would be important to them, and which mobile OS they use.</p>
                     </div>
-                    <div class="white-bg item-4">
+                    <div class="white-bg item-4 right">
                         <div class="data data-item-1">
                             <h1>89%</h1>
                             <p>Have used a professional dog care service (i.e. not in home care) in the last year.</p>
@@ -101,11 +104,11 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-5">
+                    <div class="item-5 right">
                         <h2>Competitive Analysis</h2>
                         <p>While there were no directly competing apps to research, I looked at apps that have a similar function (Yelp) and apps that focus on private dog care (Rover, Wag), to see how they handled the various user needs.</p>
                     </div>
-                    <div class="item-6">
+                    <div class="item-6 left">
                         <table cellspacing="0">
                             <thead>
                                 <th></th>
@@ -154,40 +157,58 @@
                     </div>
                 </div>
                 <div class="grey-bg container">
-                    <div class="center">
+                    <div class="center top">
                         <h2>User Personas</h2>
                         <p>To create user personas I selected three of the respondents from the survey and did a quick interview to discover more about them and their goals for using the app.</p>
                     </div>
-                    <div class="white-bg flex-container">
+                    <div id="personas" class="flex-container white-bg no-wrap">
                         <div class="user">
-                            <img src="assets/images/dogtopia/brenda.jpg" class="user-photo" alt="brenda">
-                            <h3>Brenda</h3>
-                            <p class="title">44 y/o landscape designer</p>
-                            <h4>Goals</h4>
-                            <p class="user-text">Find daycare for her 6 year old poodle to exercise a few times a week near her current job.</p>
-                            <h4>Frustrations</h4>
-                            <p class="user-text">Her job locations vary and she wants an easy way to find trusted care near where she will be working.</p>
+                            <div class="persona">
+                                <img src="assets/images/dogtopia/brenda.jpg" class="user-photo" alt="brenda">
+                                <h3>Brenda</h3>
+                                <p class="title">44 y/o landscape designer</p>
                             </div>
-                            <div class="user">
+                            <div class="goals">
+                                <h5>Goals</h5>
+                                <p class="user-text">Find daycare for her 6 year old poodle to exercise a few times a week near her current job.</p>
+                            </div>
+                            <div class="frustrations">
+                                <h5>Frustrations</h5>
+                                <p class="user-text">Her job locations vary and she wants an easy way to find trusted care near where she will be working.</p>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="persona">
                                 <img src="assets/images/dogtopia/clay.jpg" class="user-photo" alt="clay">
                                 <h3>Clay</h3>
                                 <p class="title">34 y/o sales director</p>
-                                <h4>Goals</h4>
+                            </div>
+                            <div class="goals">
+                                <h5>Goals</h5>
                                 <p class="user-text">Book boarding for his dog, Kobe, during his out of town sales calls without having to make a phone call.</p>
-                                <h4>Frustrations</h4>
+                            </div>
+                            <div class="frustrations">
+                                <h5>Frustrations</h5>
                                 <p class="user-text">He can’t book a boarding stay or see availability online so he has to take time out of his busy day to call around.</p>
                             </div>
-                            <div class="user">
+                        </div>
+                        <div class="user">
+                            <div class="persona">
                                 <img src="assets/images/dogtopia/sanja.jpg" class="user-photo" alt="sanja">
                                 <h3>Sanja</h3>
                                 <p class="title">25 y/o junior designer</p>
-                                <h4>Goals</h4>
+                            </div>
+                            <div class="goals">
+                                <h5>Goals</h5>
                                 <p class="user-text">Find a daycare that offers a discount for frequent use because her rescue dog can’t stay home alone.</p>
-                                <h4>Frustrations</h4>
+                            </div>
+                            <div class="frustrations">
+                                <h5>Frustrations</h5>
                                 <p class="user-text">Professional daycare is out of her budget unless she can find a location with a discounted monthly package.</p>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <a name="ia"></a>
             <section class="information-architecture">
@@ -203,11 +224,11 @@
             <section class="wireframes-testing">
                 <div id="dogtopia-sketches" class="full-width-image"></div>
                 <div class="grid-container container">
-                    <div class="item-7">
+                    <div class="item-7 right">
                         <h2>Low-Fidelity Wireframes</h2>
                         <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
                     </div>
-                    <div class="lightbox flex-container item-8">
+                    <div class="lightbox flex-container no-wrap item-8 left">
                         <div>
                             <img src="assets/images/dogtopia/location_balsamic.png" onclick="openModalOne();currentBalsamicSlide(1)" class="mockup" alt="location-wireframe">
                         </div>
@@ -215,7 +236,7 @@
                             <img src="assets/images/dogtopia/map_balsamic.png" onclick="openModalOne();currentBalsamicSlide(2)" class="mockup" alt="map-wireframe">
                         </div>
                     </div>
-                    <div class="modal-open item-9" onclick="openModalOne();currentBalsamicSlide(3)">click to view more</div>
+                    <div class="modal-open item-9" onclick="openModalOne();currentBalsamicSlide(3)"><span>click to view more</span></div>
                 </div>
                 <div id="balsamicModal" class="modal">
                     <span class="close cursor" onclick="closeModalOne()">&times;</span>
@@ -261,11 +282,11 @@
                 </div>
                 <div class="grey-bg">
                     <div class="container">
-                        <div class="center">
+                        <div class="center top">
                             <h2>High Fidelity Wireframes</h2>
                             <p>I expanded on my low-fidelity wireframes in Sketch adding some additional screens, and then used these wireframes to begin user testing. I utilized iOS Human Interaction Guidelines as well as several standard iOS app features like an icon-based toolbar and swipe to delete function, to keep navigation simple and intuitive.</p>
                         </div>
-                        <div class="lightbox flex-container">
+                        <div class="lightbox flex-container bottom">
                             <div>
                                 <img src="assets/images/dogtopia/search_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(1)" alt="Map">
                             </div>
@@ -279,7 +300,7 @@
                                 <img src="assets/images/dogtopia/profile_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(4)" alt="Profile">
                             </div>
                         </div>
-                        <div class="modal-open" onclick="openModalTwo();currentWireframeSlide(4)">click to view more</div>
+                        <div class="modal-open" onclick="openModalTwo();currentWireframeSlide(5)"><span>click to view more</span></div>
                     </div>
                 </div>
                 <div id="wireframeModal" class="modal">
@@ -351,11 +372,11 @@
                     <p class="user-testing">I simplified the process by having the user select which service they were booking before moving to the reservation screen, and I modeled the booking calendar after the booking process on many airline apps, which the target users are familiar with. I then created a second user test for just this task with the same set of users. With this change the users were able to complete the booking process without confusion.</p>
                     <div class="flex-container">
                         <div>
-                            <img src="assets/images/dogtopia/user_test_1.png" class="mockup" alt="user-test-round-1">
+                            <img src="assets/images/dogtopia/user_test_1.png" class="mockup user-test" alt="user-test-round-1">
                             <p>Round 1</p>
                         </div>
                         <div>
-                            <img src="assets/images/dogtopia/user_test_2.png" class="mockup" alt="user-test-round-2">
+                            <img src="assets/images/dogtopia/user_test_2.png" class="mockup user-test" alt="user-test-round-2">
                             <p>Round 2</p>
                         </div>
                     </div>
@@ -365,11 +386,11 @@
             <section class="branding">
                 <div id="dogtopia-logo-sketches" class="full-width-image"></div>
                 <div class="grey-bg grid-container container">
-                    <div class="item-10">
+                    <div class="item-10 left">
                         <h2>Typography</h2>
                         <p>I started the branding work by choosing Lato and Open Sans for the main typography - both clean, modern sans-serif fonts that would be easy to read on small screens and lend to the trustworthiness of the brand - and comfortaa in all lowercase for the logo as the round, geometric font is playful and fun like pets.</p>
                     </div>
-                    <div class="item-11 flex-container">
+                    <div class="item-11 flex-container right">
                         <div class="lato typography white-bg">
                             <h4>Lato Bold</h4>
                             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -385,13 +406,13 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-12">
+                    <div class="item-12 right">
                         <h2>Logo & Colors</h2>
                         <p>For the logo I started by writing down all the words I associated with the app (e.g. dog, doghouse, map, care, etc) and then sketched out several ideas that combined these elements. I liked the idea of incorporating a map pin since the main focus is finding locations.</p>
                         <p>For the color palette I went with a combination of oranges and a pop of bright teal green, with greys and plenty of white space. Oranges and greens are often used with pet apps as they convey friendliness and quality.</p>
                     </div>
-                    <div class="flex-column item-13">
-                        <div id="logos" class="flex-container">
+                    <div class="flex-column item-13 left">
+                        <div id="logos" class="flex-container no-wrap">
                             <div class="project-logo" id="gradient">
                                 <img src="assets/images/dogtopia/dogtopia_white.png" alt="dogtopia-logo-white">
                             </div>
@@ -414,10 +435,11 @@
             <section class="visual-design">
                 <div id="dogtopia-mockup" class="full-width-image"></div>
                 <div class="grey-bg">
-                    <div class="container center">
-                        <h2>Final Mockups</h2>
-                        <p>I applied the branding to the wireframes for the final mock-ups. I focused most of the color use to the onboarding screens to draw users in and kept it limited within the app to emphasize navigation and CTAs. I included some dog sketches (created by Freepik) throughout the app to keep up the sense of playfulness.</p>
-                        <button><a href="https://invis.io/NDGE4NZFU83#/305241574_Welcome_Screen_1" target="_blank" class="button">View Prototype</a></button>
+                    <div class="container">
+                        <div class="center">
+                            <h2>Final Mockups</h2>
+                            <p>I applied the branding to the wireframes for the final mock-ups. I focused most of the color use to the onboarding screens to draw users in and kept it limited within the app to emphasize navigation and CTAs. I included some dog sketches (created by Freepik) throughout the app to keep up the sense of playfulness.</p>
+                        </div>
                         <div class="flex-container image-container">
                             <div class="one-third">
                                 <img src="assets/images/dogtopia/onboardingflow.gif" class="mockup" alt="prototype">
@@ -432,6 +454,7 @@
                                 <p>Reservation Flow</p>
                             </div>
                         </div>
+                        <div id="prototype" class="button"><a href="https://invis.io/NDGE4NZFU83#/305241574_Welcome_Screen_1" target="_blank">View Prototype</a></div>
                     </div>
                 </div>
             </section>
@@ -451,7 +474,7 @@
         <footer>
             <div class="chat">
                 <h1>Let's Chat!</h1>
-                <button class="contact"><a href="contact.html" class="button">Contact</a></button>
+                <div id="contact" class="button"><a href="contact.html">Contact</a></div>
             </div>
             <div class="footer-content">
                 <p class="copyright">© 2018 Michelle Dunson</p>
