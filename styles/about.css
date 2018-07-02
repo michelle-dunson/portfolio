@@ -6,6 +6,10 @@ header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
  }
 
+ #main-menu a {
+     font-weight: 400;
+ }
+
 .heading {
     padding-top: 100px;
     text-align: center;

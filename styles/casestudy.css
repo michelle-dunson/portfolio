@@ -6,6 +6,10 @@ header {
     background-size: cover;
  }
 
+ #main-menu a {
+     font-weight: 400;
+ }
+
 #dogtopia {
      background-image: url(../assets/images/dogtopia/dogtopia_header.jpg);
  }
@@ -736,7 +740,7 @@ footer {
         height: 380px;
     }
     .goals, .frustrations {
-        height: 150px;
+        height: 170px;
     }
     .goal, .frustration {
         height: 210px;
