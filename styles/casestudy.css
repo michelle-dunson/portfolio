@@ -59,6 +59,7 @@ p.copyright {
 
 ul {
     -webkit-padding-start: 0;
+    -moz-padding-start: 0;
 }
 
 #case-study-menu a {
@@ -217,6 +218,7 @@ img.blocbox-mockup {
     margin-top: 10px;
     grid-column: 1 / 3;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
 table {
@@ -266,6 +268,10 @@ td:first-child {
     text-align: left;
 }
 
+.legend {
+    font-family: 'Montserrat' !important;
+}
+
 .item-5 {
     grid-row-start: 1;
     grid-column: 4 / 5;
@@ -300,9 +306,17 @@ img.user-photo {
 
 .user-text li, p.user-text {
     font-size: 18px;
-    line-height: 20px;
     font-weight: 300;
     text-align: left;
+    font-family: 'Montserrat';
+}
+
+.user-text li {
+    padding-bottom: 5px;
+}
+
+ul.user-text {
+    margin-left: 20px;
 }
 
 #user-stories {
@@ -342,10 +356,6 @@ img.user-photo {
 .lightbox {
     margin: 0 auto;
     text-align: center;
-}
-
-.lightbox img {
-    margin: 0 15px;
 }
 
 .lightbox img:hover {
@@ -392,6 +402,7 @@ img.user-photo {
 
 .modal-open > span {
     color: #06A0A6;
+    font-family: 'Montserrat';
 }
 
 .modal-open > span:hover {
@@ -614,7 +625,7 @@ video {
     text-align: center;
     box-sizing: border-box;
     line-height: 140px;
-    margin: 2%;
+    margin: 6px;
 }
 
 #teal {
@@ -692,6 +703,10 @@ a.active {
     color: #e2e2e2 !important;
 }
 
+footer {
+    padding-top: 0 !important;
+}
+
 @media (min-width: 1000px) {
     .container {
          padding: 100px 160px;
@@ -704,8 +719,6 @@ a.active {
         padding-bottom: 50px;
     }
     #scope > .flex-container {
-        align-items: flex-start;
-        width: 1000px;
         margin: 0 auto;
         justify-content: space-between;
     }
@@ -714,16 +727,19 @@ a.active {
     }
     .user {
         padding-right: 40px;
+        width: 33%;
     }
     .user:last-child {
         padding-right: 0;
     }
     .persona {
-        min-height: 380px;
+        height: 380px;
     }
-
     .goals, .frustrations {
-        min-height: 150px;
+        height: 150px;
+    }
+    .goal, .frustration {
+        height: 210px;
     }
 }
 
@@ -736,17 +752,24 @@ a.active {
     .project-logo img {
         padding: 20px 30px;
     }
+    .container {
+        padding: 100px;
+    }
+    #scope p {
+        font-size: 12px;
+    }
+    .scope:first-child {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media (max-width: 1000px) {
     p {
         font-size: 18px;
     }
-    #scope p {
-        font-size: 12px;
-    }
-    ul.user-text {
-        margin-left: 10px;
+    .container {
+        padding: 50px 80px;
     }
     table {
         margin-bottom: 15px;
@@ -772,10 +795,23 @@ a.active {
         width: 100px;
     }
     .blocbox-logo {
-        padding: 15px;
+        padding: 10px;
+    }
+    .blocbox-logo h3 {
+        font-size: 24px;
     }
     .scope:nth-child(3), .scope:last-child, .item-11 {
         grid-row-start: 2;
+    }
+}
+
+@media (max-width: 930px) {
+    p {
+        font-size: 16px;
+    }
+    .scope:first-child {
+        padding-left: 0;
+        padding-right: 10px;
     }
 }
 
@@ -790,6 +826,12 @@ a.active {
    .top {
        margin-bottom: 50px;
    }
+   #scope > .flex-container {
+       align-items: flex-start;
+   }
+   .lightbox img {
+       margin: 0 15px;
+   }
 }
 
 @media (max-width: 680px) {
@@ -803,7 +845,10 @@ a.active {
         text-align: center;
     }
     .container {
-        padding: 40px 30px;
+        padding: 50px 30px;
+    }
+    .scope:first-child {
+        padding-right: 0;
     }
     img.blocbox-mockup {
         width: 90vw;
@@ -823,7 +868,7 @@ a.active {
         display: flex;
         flex-direction: column;
     }
-    .grid-container,  .item-4 {
+    .grid-container, .item-4 {
         display: flex;
         flex-direction: column;
     }
@@ -836,6 +881,9 @@ a.active {
     }
     .item-2 {
         margin: 0 auto;
+    }
+    .title {
+        margin-bottom: 20px;
     }
     #user-stories {
         width: 90%;

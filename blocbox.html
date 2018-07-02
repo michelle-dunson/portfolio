@@ -48,7 +48,7 @@
                     <p>Blocbox is a SaaS (Software as a Service) web application which allows people to collect information and store it in a single place. A person can create simple documents, store images, links to websites, and collaborate with others.</p>
                     <div class="button"><a href="#" target="_blank">View Website</a></div>
                 </div>
-                <div id="scope" class="grey-bg grid-container container">
+                <div id="scope" class="grey-bg flex-container no-wrap container">
                     <div class="scope">
                         <h5>Duration</h5>
                         <p>16 weeks</p>
@@ -63,11 +63,11 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-1">
+                    <div class="item-1 right">
                         <h2>The Problem</h2>
                         <p>Designers and marketers often save hundreds of images and websites for inspiration or to use as resources for a project, and keep notes on their phones, computers, or in notebooks, but it is difficult to keep them organized and share them with teammates.</p>
                     </div>
-                    <div class="item-2">
+                    <div class="item-2 left">
                         <img src="assets/images/blocbox/blocbox_mockup.png" class="blocbox-mockup" alt="blocbox mockup">
                     </div>
                 </div>
@@ -76,11 +76,11 @@
             <section class="research">
                 <div id="blocbox-survey" class="full-width-image"></div>
                 <div class="grid-container grey-bg container">
-                    <div class="item-3">
+                    <div class="item-3 left">
                         <h2>User Survey</h2>
                         <p>To get an idea of what features users might want, and how they would use the software, I created a survey with questions about how our users interact with their devices, what they look at online, if they save content, if they write and save notes to remember things later, and if they collaborate and share resources with their co-workers.</p>
                     </div>
-                    <div class="white-bg item-4">
+                    <div class="white-bg item-4 right">
                         <div class="data data-item-1">
                             <h1>92%</h1>
                             <p>Save content while browsing.</p>
@@ -101,11 +101,11 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-5">
+                    <div class="item-5 right">
                         <h2>Competitive Analysis</h2>
                         <p>The cloud storage space is a crowded market with many competitors. All of these companies essentially offer the same services: cloud storage, synced across devices, with the ability to invite collaborators. One space they were all lacking was the ability to save and curate bookmarks. It became clear that the way for Blocbox to compete in this space was to become a sort of "Pinterest but with notes and collaboration" type tool for creative teams.</p>
                     </div>
-                    <div class="item-6">
+                    <div class="item-6 left">
                         <table cellspacing="0">
                             <thead>
                                 <th></th>
@@ -154,38 +154,49 @@
                     </div>
                 </div>
                 <div class="grey-bg container">
-                    <div class="center">
+                    <div class="center top">
                         <h2>User Personas</h2>
                         <p>To create user personas I selected three of the respondents from the survey and did a quick interview to discover more about them and their goals for using the app.</p>
                     </div>
-                    <div class="white-bg flex-container">
+                    <div id="personas" class="white-bg flex-container no-wrap">
                         <div class="user">
-                            <img src="assets/images/blocbox/daniel.jpg" class="user-photo" alt="brenda">
-                            <h3>Daniel</h3>
-                            <p class="title">26 y/o design director</p>
-                            <h4>Goals</h4>
-                            <ul class="user-text">
-                                <li>Share inspiration with his team</li>
-                                <li>Organize content into groups</li>
-                                <li>Ability to write and share notes</li>
-                            </ul>
-                            <h4>Frustrations</h4>
-                            <ul class="user-text">
-                                <li>Difficulty managing bookmarks</li>
-                                <li>Too many different softwares</li>
-                                <li>Not accessible on all devices</li>
-                            </ul>
+                            <div class="persona">
+                                <img src="assets/images/blocbox/daniel.jpg" class="user-photo" alt="brenda">
+                                <h3>Daniel</h3>
+                                <p class="title">26 y/o design director</p>
                             </div>
-                            <div class="user">
+                            <div class="goal">
+                                <h4>Goals</h4>
+                                <ul class="user-text">
+                                    <li>Share inspiration with his team</li>
+                                    <li>Organize content into groups</li>
+                                    <li>Ability to write and share notes</li>
+                                </ul>
+                            </div>
+                            <div class="frustration">
+                                <h4>Frustrations</h4>
+                                <ul class="user-text">
+                                    <li>Difficulty managing bookmarks</li>
+                                    <li>Too many different softwares</li>
+                                    <li>Not accessible on all devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="persona">
                                 <img src="assets/images/blocbox/susan.jpg" class="user-photo" alt="clay">
                                 <h3>Susan</h3>
                                 <p class="title">33 y/o marketing director</p>
+                            </div>
+                            <div class="goal">
                                 <h4>Goals</h4>
                                 <ul class="user-text">
                                     <li>Keeping track of bookmarked content</li>
                                     <li>Ability to view at work and home</li>
                                     <li>Would like easy notetaking software</li>
                                 </ul>
+                            </div>
+                            <div class="frustration">
                                 <h4>Frustrations</h4>
                                 <ul class="user-text">
                                     <li>Only accessible on work laptop</li>
@@ -193,16 +204,22 @@
                                     <li>Other software is difficult to use</li>
                                 </ul>
                             </div>
-                            <div class="user">
+                        </div>
+                        <div class="user">
+                            <div class="persona">
                                 <img src="assets/images/blocbox/amy.jpg" class="user-photo" alt="sanja">
                                 <h3>Amy</h3>
                                 <p class="title">32 y/o web designer</p>
+                            </div>
+                            <div class="goal">
                                 <h4>Goals</h4>
                                 <ul class="user-text">
                                     <li>Centralized way of organizing inspiration</li>
                                     <li>Simplicity of pen and paper into device experience</li>
                                     <li>Synced online, not computer</li>
                                 </ul>
+                            </div>
+                            <div class="frustration">
                                 <h4>Frustrations</h4>
                                 <ul class="user-text">
                                     <li>Older computer = less hard drive space</li>
@@ -212,6 +229,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <a name="ia"></a>
             <section class="information-architecture">
@@ -227,14 +245,14 @@
             <section class="wireframes-testing">
                 <div id="blocbox-sketches" class="full-width-image"></div>
                 <div class="grid-container container">
-                    <div class="item-7">
+                    <div class="item-7 right">
                         <h2>Low-Fidelity Wireframes</h2>
                         <p>I started wireframing the landing page first, as this would be where are potential users would form their first impressions and learn about Blocbox. I wanted a layout that was clean and to the point, while still conveying enough information to new users. I created a few versions that each started with a large hero image to capture attention, a section for features, pricing, and testimonials.</p>
                     </div>
-                    <div class="lightbox item-8">
+                    <div class="lightbox item-8 left">
                         <img src="assets/images/blocbox/dashboard_balsamic.png" onclick="openModalOne();currentBalsamicSlide(1)" class="blocbox-mockup" alt="dashboard-wireframe">
                     </div>
-                    <div class="modal-open item-9" onclick="openModalOne();currentBalsamicSlide(3)">click to view more</div>
+                    <div class="modal-open item-9" onclick="openModalOne();currentBalsamicSlide(3)"><span>click to view more</span></div>
                 </div>
                 <div id="balsamicModal" class="modal">
                     <span class="close cursor" onclick="closeModalOne()">&times;</span>
@@ -280,14 +298,14 @@
                 </div>
                 <div class="grey-bg">
                     <div class="container">
-                        <div class="center">
+                        <div class="center top">
                             <h2>High Fidelity Wireframes</h2>
                             <p>Once I settled on a landing page layout, I fleshed out my designs in Sketch adding in all of the written content so I could begin user testing. I wanted to make sure there was enough information on the landing page and in the dashboard empty states that new users could figure out what Blocbox was for and how to use it.</p>
                         </div>
                         <div class="lightbox">
                             <img src="assets/images/blocbox/dashboard.png" class="blocbox-mockup" onclick="openModalTwo();currentWireframeSlide(1)" alt="dashboard">
                         </div>
-                        <div class="modal-open" onclick="openModalTwo();currentWireframeSlide(4)">click to view more</div>
+                        <div class="modal-open" onclick="openModalTwo();currentWireframeSlide(4)"><span>click to view more</span></div>
                     </div>
                 </div>
                 <div id="wireframeModal" class="modal">
@@ -361,7 +379,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="center">
+                    <div class="center top">
                         <h2>User Testing</h2>
                         <p>Utalizing usertesting.com I conducted remote user testing to get feedback on the landing page design & content, as well as the navigation of the dashboard. Overall the feedback was positive, however, I realized I should have included some more in-between state screens for the navigation test so that it would feel more like the live site experience. Without them the testers were a little confused about whether they had completed the task correctly or not.</p>
                         <p>Watch one of the user tests below.</p>
@@ -376,11 +394,11 @@
             <section class="branding">
                 <div id="blocbox-logo-sketches" class="full-width-image"></div>
                 <div class="grey-bg grid-container container">
-                    <div class="item-10">
+                    <div class="item-10 left">
                         <h2>Typography</h2>
                         <p>I started the branding work by choosing Montserrat and Lato for the typography - both clean, modern sans-serif fonts that would be easy to read online and lend to the trustworthiness of the brand.</p>
                     </div>
-                    <div class="item-11 flex-container">
+                    <div class="item-11 flex-container right">
                         <div class="lato typography white-bg">
                             <h4>Lato Bold</h4>
                             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -396,12 +414,12 @@
                     </div>
                 </div>
                 <div class="grid-container container">
-                    <div class="item-12">
+                    <div class="item-12 right">
                         <h2>Logo & Colors</h2>
                         <p>For the logo I began with a mindmap and then sketched out every iteration of blocks and boxes I could and landed on a logo that resembles two B’s made of blocks.</p>
                         <p>For the color palette I went with a combination of purples, blue, a pop of bright green, and grey and white accents to appear both professional and modern.</p>
                     </div>
-                    <div class="flex-column item-13">
+                    <div class="flex-column item-13 left">
                         <div id="logos" class="flex-column">
                             <div class="blocbox-logo" id="light">
                                 <img src="assets/images/blocbox/blocbox_logo.png" alt="blocbox-logo-color">
@@ -428,9 +446,10 @@
                 <div id="blocbox-mockup" class="full-width-image"></div>
                 <div class="grey-bg">
                     <div class="container center">
-                        <h2>Final Mockups</h2>
-                        <p></p>
-                        <div class="button"><a href="#" target="_blank">View Website</a></div>
+                        <div class="top">
+                            <h2>Final Mockups</h2>
+                            <p></p>
+                        </div>
                         <div class="flex-container image-container">
                             <div class="one-half">
                                 <img src="assets/images/blocbox/landing.gif" class="mockup" alt="prototype">
@@ -441,6 +460,7 @@
                                 <p>Dashboard</p>
                             </div>
                         </div>
+                        <div class="button"><a href="#" target="_blank">View Website</a></div>
                     </div>
                 </div>
             </section>

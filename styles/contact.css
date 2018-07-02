@@ -73,6 +73,7 @@ input[type=submit] {
     font-family: 'Montserrat';
     border: 3px solid #06A0A6;
     color: #06A0A6;
+    background-color: transparent;
     width: 300px;
     height: 60px;
     padding: 12px 20px;

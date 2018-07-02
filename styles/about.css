@@ -15,6 +15,7 @@ header {
 .stay {
     position: absolute;
     right: 50%;
+    color: #ffffff;
 }
 
 .heading p {
@@ -24,14 +25,16 @@ header {
     font-size: 48px;
     font-family: 'Muli';
     font-weight: 700;
+    color: #ffffff;
 }
 
-.scroll {
+span.scroll {
   position: absolute;
   left: 50%;
   width: 500px;
   opacity: 0;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .letter {
@@ -126,8 +129,8 @@ span.teal {
 
 .bio {
     width: 90%;
-    line-height: 24px;
-    padding: 0 16px 16px 24px;
+    line-height: 1.25;
+    padding: 10px 16px 16px 24px;
 }
 
 .italic {
@@ -313,10 +316,11 @@ span.teal {
         padding-top: 100px;
         padding-bottom: 0;
         margin: 0;
+        color: #ffffff;
     }
     .scroll {
         margin-left: -145px !important;
-        margin-top: -115px;
+        margin-top: -135px;
         font-size: 36px;
     }
     .timeline {
@@ -362,11 +366,13 @@ span.teal {
         text-align: left;
         width: 80%;
         margin: 0 auto;
+        color: #ffffff;
     }
     .heading p {
         display: block;
         position: relative;
         left: 0;
+        color: #ffffff;
     }
     .scroll {
         margin-left: -140px;
@@ -376,9 +382,12 @@ span.teal {
 @media (max-width: 425px) {
     .mobile {
         font-size: 40px;
+        color: #ffffff;
+        padding-bottom: 0;
     }
     .scroll {
         font-size: 28px;
-        margin-left: -130px !important;
+        margin-left: -135px !important;
+        margin-top: -130px;
     }
 }
