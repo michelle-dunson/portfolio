@@ -344,6 +344,10 @@ ul.user-text {
     color: #ffffff;
 }
 
+#user-stories a {
+    font-weight: 700;
+}
+
 .item-7 {
     grid-row-start: 1;
     grid-column: 4 / 5;
@@ -839,6 +843,18 @@ footer {
 }
 
 @media (max-width: 680px) {
+    #case-study-menu {
+        display: none;
+    }
+    header {
+        min-height: 300px;
+    }
+    .full-width-image {
+        background-attachment: scroll;
+    }
+    .about img {
+        width: 150px;
+    }
     #blocbox-logo-sketches {
         background-position: 90%;
     }
