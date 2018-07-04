@@ -48,7 +48,7 @@
             <h1>Featured Work</h1>
             <section class="grid-container container">
                 <div class="thumbnail left">
-                    <img src="assets/images/dogtopia.png" alt="Dogtopia" class="dogtopia">
+                    <img src="assets/images/dogtopia.jpg" alt="Dogtopia" class="dogtopia">
                 </div>
                 <div class="details right">
                     <h2>Dogtopia</h2>
@@ -130,31 +130,35 @@
             </div>
         </footer>
         <script type="text/javascript">
-            var scrollPos = window.pageYOffset;
-            var evenDetails = document.getElementsByClassName('details right')[0];
-            var oddDetails = document.getElementsByClassName('details left')[0];
-            var evenThumbnail = document.getElementsByClassName('thumbnail left')[0];
-            var oddThumbnail = document.getElementsByClassName('thumbnail right')[0];
+            (function() {
 
-            if(screen.width > 650) {
-                window.addEventListener('scroll', function() {
-                    scrollPos = window.pageYOffset;
+              'use strict';
 
-                    if (scrollPos >= 100) {
-                        evenDetails.classList.add('even');
-                        evenThumbnail.classList.add('even');
-                    }
-                });
+              var items = document.querySelectorAll(".grid-container div");
 
-                window.addEventListener('scroll', function() {
-                    scrollPos = window.pageYOffset;
+              function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                  rect.top >= 0 &&
+                  rect.left >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+              }
 
-                    if (scrollPos >= 600) {
-                        oddDetails.classList.add('odd');
-                        oddThumbnail.classList.add('odd');
-                    }
-                });
-            }
+              function callbackFunc() {
+                for (var i = 0; i < items.length; i++) {
+                  if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                  }
+                }
+              }
+
+              window.addEventListener("load", callbackFunc);
+              window.addEventListener("resize", callbackFunc);
+              window.addEventListener("scroll", callbackFunc);
+
+            })();
         </script>
     </body>
 </html>

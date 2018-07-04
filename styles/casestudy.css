@@ -178,6 +178,11 @@ img.blocbox-mockup {
     line-height: 20px;
 }
 
+.scope {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .item-1 {
     grid-row-start: 1;
     grid-column: 3;
@@ -379,9 +384,9 @@ ul.user-text {
     display: table;
     clear: both;
 }
+
 .thumbnails {
     display: flex;
-    justify-content: center;
 }
 
 .thumbnail {
@@ -426,7 +431,6 @@ ul.user-text {
 
 .thumbnail-container {
     width: 100%;
-    margin-top: 50px;
 }
 
 .close {
@@ -449,30 +453,24 @@ ul.user-text {
 .slides,
 .images {
   display: none;
-  margin-top: -80px;
   text-align: center;
-}
-
-.slides img
-.images img {
-    height: 500px;
 }
 
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .next {
@@ -486,12 +484,13 @@ ul.user-text {
 }
 
 .numbertext {
-  color: #f2f2f2;
-  background-color: rgba(0,0,0,0.3);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    font-family: 'Montserrat';
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 .caption-container {
@@ -524,7 +523,10 @@ img.user-test {
 }
 
 video {
+    display: block;
     width: 80vw;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .item-10 {
@@ -538,7 +540,8 @@ video {
 .typography {
     padding: 15px;
     margin: 10px;
-    max-width: 500px;
+    max-width: 425px;
+    box-sizing: border-box;
     letter-spacing: 0;
 }
 
@@ -725,8 +728,6 @@ footer {
     #scope {
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    #scope > .flex-container {
         margin: 0 auto;
         justify-content: space-between;
     }
@@ -834,11 +835,24 @@ footer {
    .top {
        margin-bottom: 50px;
    }
-   #scope > .flex-container {
+   #scope {
        align-items: flex-start;
    }
    .lightbox img {
        margin: 0 15px;
+   }
+   .slides,
+   .images {
+     margin-top: -80px;
+ }
+   img.slide, img.slide-tall {
+       height: 75vh;
+   }
+   .thumbnail-container {
+       margin-top: 50px;
+   }
+   .thumbnails {
+      justify-content: center;
    }
 }
 
@@ -873,12 +887,21 @@ footer {
     img.blocbox-mockup {
         width: 90vw;
     }
+    img.slide {
+        width: 80%;
+    }
+    img.slide-tall {
+        max-height: 400px;
+    }
     .thumbnails {
         overflow-x: scroll;
     }
     .thumbnail {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .thumbnail-container {
+        margin-top: -50px;
     }
     .flex-container {
         justify-content: center;
