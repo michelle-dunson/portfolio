@@ -14,6 +14,10 @@ header {
      background-image: url(../assets/images/dogtopia/dogtopia_header.jpg);
  }
 
+ #blocbox {
+      background-image: url(../assets/images/blocbox/blocbox_header.jpg);
+  }
+
  .menu-container > label {
      color: #333333;
  }
@@ -112,6 +116,10 @@ ul {
 
 #dogtopia-sketches {
     background-image: url(../assets/images/dogtopia/dogtopia_sketches.jpg);
+}
+
+#blocbox-sketches {
+    background-image: url(../assets/images/blocbox/blocbox_sketches.png);
 }
 
 #dogtopia-logo-sketches {
