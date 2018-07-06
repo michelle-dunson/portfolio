@@ -926,7 +926,7 @@ footer {
     img.user-photo {
         width: 200px;
     }
-    .user-text li, .user-text p {
+    p.user-text, .user-text li {
         font-size: 16px;
     }
     img.slide {
@@ -970,12 +970,9 @@ footer {
         text-align: left;
         line-height: 30px;
     }
-    .item-2 {
-        margin: 0 auto;
-    }
     .title {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
     #user-stories {
         width: 90%;

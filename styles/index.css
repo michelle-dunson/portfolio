@@ -582,7 +582,7 @@ div.in-view.right {
     .hero-text h1,
     .hero-text h2,
     .hero-text p {
-        padding-bottom: 2%;
+        padding-bottom: 10px;
     }
     .mobile-hide {
         display: none;
