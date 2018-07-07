@@ -423,12 +423,12 @@
 }
 
 div.in-view.left {
-  animation: fadeInLeftBig 1.5s;
+  animation: fadeInLeftBig 1s;
   animation-fill-mode: both;
 }
 
 div.in-view.right {
-  animation: fadeInRightBig 1.5s;
+  animation: fadeInRightBig 1s;
   animation-fill-mode: both;
 }
 
@@ -584,6 +584,9 @@ div.in-view.right {
     .hero-text p {
         padding-bottom: 10px;
     }
+    h1 {
+        font-size: 30px;
+    }
     .mobile-hide {
         display: none;
     }
@@ -592,6 +595,9 @@ div.in-view.right {
     }
     .tag {
         font-size: 11px;
+    }
+    .button {
+        margin-bottom: 30px;
     }
     .process {
         padding: 50px 30px;

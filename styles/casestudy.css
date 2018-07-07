@@ -14,9 +14,9 @@ header {
      background-image: url(../assets/images/dogtopia/dogtopia_header.jpg);
  }
 
- #blocbox {
+#blocbox {
       background-image: url(../assets/images/blocbox/blocbox_header.jpg);
-  }
+}
 
  .menu-container > label {
      color: #333333;
@@ -611,6 +611,10 @@ video {
     margin: 10px;
 }
 
+.blocbox-logo.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 .blocbox-logo h3 {
     padding-left: 20px;
     font-size: 36px;
@@ -618,7 +622,7 @@ video {
 }
 
 #light {
-    background-color: #e2e2e2;
+    background-color: #ffffff;
 }
 
 #dark {
