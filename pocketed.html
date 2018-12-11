@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Michelle Dunson - Product & Web Designer</title>
         <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Muli:300,400,700|Lato:700|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Muli" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -23,7 +23,7 @@
 
     </head>
     <body>
-        <header id="dogtopia">
+        <header id="pocketed">
             <nav class="navbar">
                 <a href="index.html"><img src="assets/images/Logo.png" alt="michelle dunson logo" class="logo"></a>
                 <div class="menu-container" aria-label="Menu">
@@ -53,8 +53,8 @@
             <section class="overview">
                 <div class="center container">
                     <div class="about">
-                        <img src="assets/images/dogtopia/dogtopia_logo.png" alt="dogtopia logo">
-                        <p>Dogtopia is a mobile app which allows dog owners to find reliable, professional care for their dogs. A user can search for daycare, boarding, or grooming in their area, make a reservation, and pay.</p>
+                        <img src="assets/images/pocketed/pocketed_logo.png" alt="pocketed logo">
+                        <p>Pocketed is a responsive e-commerce website selling women's clothing with functional pockets.</p>
                     </div>
                     <div class="about">
                         <div class="button"><a href="https://invis.io/NDGE4NZFU83#/305241574_Welcome_Screen_1" target="_blank">View Prototype</a></div>
@@ -79,16 +79,16 @@
                 <div class="grid-container container">
                     <div class="item-1 right">
                         <h2>The Problem</h2>
-                        <p>In very dog friendly cities, such as Los Angeles, numerous dog daycares and hotels have opened in recent years, but there is currently no centralized place to search for them. Additionally, many daycares do not list prices or availability online, and few offer online payment.</p>
+                        <p>Women's clothing often has no/faux pockets or the pockets are so small they can barely fit a credit card. Additionally, it can be really difficult to determine whether a pocket is fake or how large it is when shopping online. Pocketed aims to solve this problem by allowing users to filter category pages by pocket-size and giving an indicator of what size items will fit in the item's pocket(s) on the product detail page.</p>
                     </div>
                     <div class="item-2 left">
-                        <img src="assets/images/dogtopia/dogtopia_mockup.png" class="mockup" alt="dogtopia mockup">
+                        <img src="assets/images/pocketed/pocketed_mockup.png" class="mockup" alt="pocketed mockup">
                     </div>
                 </div>
             </section>
             <a name="research"></a>
             <section class="research">
-                <div id="dogtopia-survey" class="full-width-image"></div>
+                <div id="pocketed-survey" class="full-width-image"></div>
                 <div class="grid-container grey-bg container">
                     <div class="item-3 left">
                         <h2>User Survey</h2>
@@ -175,47 +175,71 @@
                     <div id="personas" class="flex-container white-bg no-wrap">
                         <div class="user">
                             <div class="persona">
-                                <img src="assets/images/dogtopia/brenda.jpg" class="user-photo" alt="brenda">
-                                <h3>Brenda</h3>
-                                <p class="title">44 y/o landscape designer</p>
+                                <img src="assets/images/pocketed/whitney.jpg" class="user-photo" alt="brenda">
+                                <h3>Whitney</h3>
+                                <p class="title">24 y/o fashion blogger</p>
                             </div>
-                            <div class="goals">
+                            <div class="goal">
                                 <h5>Goals</h5>
-                                <p class="user-text">Find daycare for her 6 year old poodle to exercise a few times a week near her current job.</p>
+                                <ul class="user-text">
+                                    <li>Always stay up to date with the latest fashion trends</li>
+                                    <li>Post an outfit of the day every day without repeating an outfit</li>
+                                    <li>Give quality recommendations to all her readers</li>
+                                </ul>
                             </div>
-                            <div class="frustrations">
+                            <div class="frustration">
                                 <h5>Frustrations</h5>
-                                <p class="user-text">Her job locations vary and she wants an easy way to find trusted care near where she will be working.</p>
+                                <ul class="user-text">
+                                    <li>Sizes can vary widely between brands and even within brands</li>
+                                    <li>Most websites only show clothes on a size 0 model</li>
+                                    <li>Product descriptions and photos can be very inaccurate</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="user">
                             <div class="persona">
-                                <img src="assets/images/dogtopia/clay.jpg" class="user-photo" alt="clay">
-                                <h3>Clay</h3>
-                                <p class="title">34 y/o sales director</p>
+                                <img src="assets/images/pocketed/tina.jpg" class="user-photo" alt="clay">
+                                <h3>Tina</h3>
+                                <p class="title">32 y/o art teacher</p>
                             </div>
-                            <div class="goals">
+                            <div class="goal">
                                 <h5>Goals</h5>
-                                <p class="user-text">Book boarding for his dog, Kobe, during his out of town sales calls without having to make a phone call.</p>
+                                <ul class="user-text">
+                                    <li>Find work appropriate outfits within her budget</li>
+                                    <li>Find plus size pieces that aren't shapeless or boring</li>
+                                    <li>Know ahead of a shopping trip that what she wants is available in store</li>
+                                </ul>
                             </div>
-                            <div class="frustrations">
+                            <div class="frustration">
                                 <h5>Frustrations</h5>
-                                <p class="user-text">He can’t book a boarding stay or see availability online so he has to take time out of his busy day to call around.</p>
+                                <ul class="user-text">
+                                    <li>Plus sizes are often an afterthought for most brands</li>
+                                    <li>Nonstandard sizing means trying pieces on is a must</li>
+                                    <li>Can't tell what will be available in store when browsing online</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="user">
                             <div class="persona">
-                                <img src="assets/images/dogtopia/sanja.jpg" class="user-photo" alt="sanja">
-                                <h3>Sanja</h3>
-                                <p class="title">25 y/o junior designer</p>
+                                <img src="assets/images/pocketed/lucy.jpg" class="user-photo" alt="sanja">
+                                <h3>Lucy</h3>
+                                <p class="title">28 y/o product manager</p>
                             </div>
-                            <div class="goals">
+                            <div class="goal">
                                 <h5>Goals</h5>
-                                <p class="user-text">Find a daycare that offers a discount for frequent use because her rescue dog can’t stay home alone.</p>
+                                <ul class="user-text">
+                                    <li>Never have to carry a bag on any occassion</li>
+                                    <li>Build a wardrobe of only pieces she truly loves</li>
+                                    <li>Return fewer online purchases by having a clearer idea of what a piece will look like in person</li>
+                                </ul>
                             </div>
-                            <div class="frustrations">
+                            <div class="frustration">
                                 <h5>Frustrations</h5>
-                                <p class="user-text">Professional daycare is out of her budget unless she can find a location with a discounted monthly package.</p>
+                                <ul class="user-text">
+                                    <li>Faux or no pockets in women's clothing</li>
+                                    <li>Trying to make sense of women's sizing in online charts</li>
+                                    <li>Product descriptions aren't detailed enough to know exactly what you're getting online</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -226,25 +250,25 @@
                 <div id="dogtopia-flows" class="full-width-image">
                     <div id="user-stories" class="center container">
                         <h2>User Stories & User Flows</h2>
-                        <p>I created user stories based on the problem the app is aiming to solve, as well as features users requested in the user surveys. I then narrowed the scope down to the MVP (minimum viable product), and then created user flows for the three main tasks a user needs to complete: sign up, find a location, and make a reservation.</p>
+                        <p>I created user stories based on the problem the site is aiming to solve, as well as features users requested in the user surveys. I then narrowed the scope down to the MVP (minimum viable product), and then created user flows for the three main tasks a user needs to complete: browse for products, add a product to their bag, and complete the checkout process.</p>
                         <p>See all <a href="https://docs.google.com/spreadsheets/d/1rUR10zXJE6qEHsCF7N7YZBiQC8UXlxyshKbc_oPUx4g/edit?usp=sharing" target="_blank">user stories</a> and <a href="https://drive.google.com/file/d/1tq8JV_pNOS-frNeabZnUld4OFQgsMuyW/view?usp=sharing" target="_blank">user flows</a>.</p>
                     </div>
                 </div>
             </section>
             <a name="wireframes"></a>
             <section class="wireframes-testing">
-                <div id="dogtopia-sketches" class="full-width-image"></div>
+                <div id="pocketed-sketches" class="full-width-image"></div>
                 <div class="grid-container container">
                     <div class="item-7 right">
                         <h2>Low-Fidelity Wireframes</h2>
-                        <p>I created the initial wireframes based on user flows for 3 main tasks: New User SignUp, Searching for a Location, and Making a Reservation. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
+                        <p>I created the initial wireframes based on user flows for 3 main tasks: Browse Products, Add to Bag, and Complete Checkout. As these tasks are at the core of the app, making sure that the flow was seamless and efficient was crucial.</p>
                     </div>
                     <div class="lightbox flex-container no-wrap item-8 left">
                         <div>
-                            <img src="assets/images/dogtopia/location_balsamic.png" onclick="openModalOne();currentBalsamicSlide(1)" class="mockup" alt="location-wireframe">
+                            <img src="assets/images/pocketed/location_balsamic.png" onclick="openModalOne();currentBalsamicSlide(1)" class="mockup" alt="location-wireframe">
                         </div>
                         <div class="mobile-hide">
-                            <img src="assets/images/dogtopia/map_balsamic.png" onclick="openModalOne();currentBalsamicSlide(2)" class="mockup" alt="map-wireframe">
+                            <img src="assets/images/pocketed/map_balsamic.png" onclick="openModalOne();currentBalsamicSlide(2)" class="mockup" alt="map-wireframe">
                         </div>
                     </div>
                     <div class="modal-open item-9" onclick="openModalOne();currentBalsamicSlide(3)"><span>click to view more</span></div>
@@ -254,19 +278,19 @@
                     <div class="modal-content">
                         <div class="slides">
                             <div class="numbertext">1 / 4</div>
-                            <img src="assets/images/dogtopia/location_balsamic.png" class="slide-tall">
+                            <img src="assets/images/pocketed/location_balsamic.png" class="slide-tall">
                         </div>
                         <div class="slides">
                             <div class="numbertext">2 / 4</div>
-                            <img src="assets/images/dogtopia/map_balsamic.png" class="slide-tall">
+                            <img src="assets/images/pocketed/map_balsamic.png" class="slide-tall">
                         </div>
                         <div class="slides">
                             <div class="numbertext">3 / 4</div>
-                            <img src="assets/images/dogtopia/sign_up_balsamic.png" class="slide-tall">
+                            <img src="assets/images/pocketed/sign_up_balsamic.png" class="slide-tall">
                         </div>
                         <div class="slides">
                             <div class="numbertext">4 / 4</div>
-                            <img src="assets/images/dogtopia/sign_in_balsamic.png" class="slide-tall">
+                            <img src="assets/images/pocketed/sign_in_balsamic.png" class="slide-tall">
                         </div>
                     </div>
                     <div class="thumbnail-container">
@@ -277,16 +301,16 @@
                         </div>
                         <div class="thumbnails">
                             <div class="thumbnail">
-                                <img class="thumb" src="assets/images/dogtopia/location_balsamic_thumb.png" onclick="currentBalsamicSlide(1)" alt="Location">
+                                <img class="thumb" src="assets/images/pocketed/location_balsamic_thumb.png" onclick="currentBalsamicSlide(1)" alt="Location">
                             </div>
                             <div class="thumbnail">
-                                <img class="thumb" src="assets/images/dogtopia/map_balsamic_thumb.png" onclick="currentBalsamicSlide(2)" alt="Map">
+                                <img class="thumb" src="assets/images/pocketed/map_balsamic_thumb.png" onclick="currentBalsamicSlide(2)" alt="Map">
                             </div>
                             <div class="thumbnail">
-                                <img class="thumb" src="assets/images/dogtopia/sign_up_balsamic_thumb.png" onclick="currentBalsamicSlide(3)" alt="Sign Up">
+                                <img class="thumb" src="assets/images/pocketed/sign_up_balsamic_thumb.png" onclick="currentBalsamicSlide(3)" alt="Sign Up">
                             </div>
                             <div class="thumbnail">
-                                <img class="thumb" src="assets/images/dogtopia/sign_in_balsamic_thumb.png" onclick="currentBalsamicSlide(4)" alt="Sign In">
+                                <img class="thumb" src="assets/images/pocketed/sign_in_balsamic_thumb.png" onclick="currentBalsamicSlide(4)" alt="Sign In">
                             </div>
                         </div>
                     </div>
@@ -299,16 +323,16 @@
                         </div>
                         <div class="lightbox flex-container no-wrap">
                             <div>
-                                <img src="assets/images/dogtopia/search_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(1)" alt="Map">
+                                <img src="assets/images/pocketed/search_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(1)" alt="Map">
                             </div>
                             <div>
-                                <img src="assets/images/dogtopia/location_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(2)" alt="Location">
+                                <img src="assets/images/pocketed/location_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(2)" alt="Location">
                             </div>
                             <div class="mobile-hide">
-                                <img src="assets/images/dogtopia/location_wireframe_2.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(3)" alt="Location">
+                                <img src="assets/images/pocketed/location_wireframe_2.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(3)" alt="Location">
                             </div>
                             <div class="mobile-hide">
-                                <img src="assets/images/dogtopia/profile_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(4)" alt="Profile">
+                                <img src="assets/images/pocketed/profile_wireframe.png" class="mockup" onclick="openModalTwo();currentWireframeSlide(4)" alt="Profile">
                             </div>
                         </div>
                         <div class="modal-open" onclick="openModalTwo();currentWireframeSlide(5)"><span>click to view more</span></div>
@@ -319,31 +343,31 @@
                     <div class="modal-content">
                         <div class="images">
                             <div class="numbertext">1 / 7</div>
-                            <img src="assets/images/dogtopia/search_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/search_wireframe.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">2 / 7</div>
-                            <img src="assets/images/dogtopia/location_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/location_wireframe.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">3 / 7</div>
-                            <img src="assets/images/dogtopia/location_wireframe_2.png" class="slide-tall">
+                            <img src="assets/images/pocketed/location_wireframe_2.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">4 / 7</div>
-                            <img src="assets/images/dogtopia/profile_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/profile_wireframe.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">5 / 7</div>
-                            <img src="assets/images/dogtopia/favorites_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/favorites_wireframe.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">6 / 7</div>
-                            <img src="assets/images/dogtopia/checkout_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/checkout_wireframe.png" class="slide-tall">
                         </div>
                         <div class="images">
                             <div class="numbertext">7 / 7</div>
-                            <img src="assets/images/dogtopia/pet_profile_wireframe.png" class="slide-tall">
+                            <img src="assets/images/pocketed/pet_profile_wireframe.png" class="slide-tall">
                         </div>
                     </div>
                     <div class="thumbnail-container">
@@ -354,25 +378,25 @@
                         </div>
                         <div class="thumbnails">
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/map_wireframe_thumb.png" onclick="currentWireframeSlide(1)" alt="Search Map">
+                                <img class="dots" src="assets/images/pocketed/map_wireframe_thumb.png" onclick="currentWireframeSlide(1)" alt="Search Map">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/location_wireframe_thumb.png" onclick="currentWireframeSlide(2)" alt="Location">
+                                <img class="dots" src="assets/images/pocketed/location_wireframe_thumb.png" onclick="currentWireframeSlide(2)" alt="Location">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/location_wireframe_2_thumb.png" onclick="currentWireframeSlide(3)" alt="Location">
+                                <img class="dots" src="assets/images/pocketed/location_wireframe_2_thumb.png" onclick="currentWireframeSlide(3)" alt="Location">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/profile_wireframe_thumb.png" onclick="currentWireframeSlide(4)" alt="Profile">
+                                <img class="dots" src="assets/images/pocketed/profile_wireframe_thumb.png" onclick="currentWireframeSlide(4)" alt="Profile">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/favorites_wireframe_thumb.png" onclick="currentWireframeSlide(5)" alt="Favorites">
+                                <img class="dots" src="assets/images/pocketed/favorites_wireframe_thumb.png" onclick="currentWireframeSlide(5)" alt="Favorites">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/checkout_wireframe_thumb.png" onclick="currentWireframeSlide(6)" alt="Checkout">
+                                <img class="dots" src="assets/images/pocketed/checkout_wireframe_thumb.png" onclick="currentWireframeSlide(6)" alt="Checkout">
                             </div>
                             <div class="thumbnail">
-                                <img class="dots" src="assets/images/dogtopia/pet_profile_wireframe_thumb.png" onclick="currentWireframeSlide(7)" alt="Pet Profile">
+                                <img class="dots" src="assets/images/pocketed/pet_profile_wireframe_thumb.png" onclick="currentWireframeSlide(7)" alt="Pet Profile">
                             </div>
                         </div>
                     </div>
@@ -385,11 +409,11 @@
                     </div>
                     <div class="flex-container">
                         <div>
-                            <img src="assets/images/dogtopia/user_test_1.png" class="mockup user-test" alt="user-test-round-1">
+                            <img src="assets/images/pocketed/user_test_1.png" class="mockup user-test" alt="user-test-round-1">
                             <p>Round 1</p>
                         </div>
                         <div>
-                            <img src="assets/images/dogtopia/user_test_2.png" class="mockup user-test" alt="user-test-round-2">
+                            <img src="assets/images/pocketed/user_test_2.png" class="mockup user-test" alt="user-test-round-2">
                             <p>Round 2</p>
                         </div>
                     </div>
@@ -397,7 +421,7 @@
             </section>
             <a name="branding"></a>
             <section class="branding">
-                <div id="dogtopia-logo-sketches" class="full-width-image"></div>
+                <div id="pocketed-logo-sketches" class="full-width-image"></div>
                 <div class="grid-container grey-bg container">
                     <div class="item-12 right">
                         <h2>Logo & Colors</h2>
@@ -406,37 +430,37 @@
                     </div>
                     <div class="flex-column item-13 left">
                         <div id="logos" class="flex-container no-wrap">
-                            <div class="project-logo" id="gradient">
-                                <img src="assets/images/dogtopia/dogtopia_white.png" alt="dogtopia-logo-white">
+                            <div class="project-logo" id="light">
+                                <img src="assets/images/pocketed/pocketed.png" alt="pocketed-logo">
                             </div>
-                            <div class="project-logo" id="orange-on-grey">
-                                <img src="assets/images/dogtopia/dogtopia_orange.png" alt="dogtopia-logo-color">
+                            <div class="project-logo" id="dark-gray">
+                                <img src="assets/images/pocketed/pocketed_white.png" alt="pocketed-logo-white">
                             </div>
                         </div>
                         <div id="color-palette" class="flex-container">
-                            <div id="teal" class="color">#2ec4b6</div>
-                            <div id="orange" class="color">#f06449</div>
-                            <div id="red" class="color">#e7524e</div>
-                            <div id="black" class="color">#333333</div>
-                            <div id="grey" class="color">#e2e2e2</div>
-                            <div id="white" class="color">#ffffff</div>
+                            <div id="oceanblue" class="color">#4d6d9a</div>
+                            <div id="seafoam" class="color">#99ced3</div>
+                            <div id="pink" class="color">#edb5bf</div>
+                            <div id="lightblue" class="color">#729dbf</div>
+                            <div id="gray" class="color">#6e7376</div>
+                            <div id="charcoal" class="color">#373737</div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-container container">
                     <div class="item-10 left">
                         <h2>Typography</h2>
-                        <p>I started the branding work by choosing Lato and Open Sans for the main typography - both clean, modern sans-serif fonts that would be easy to read on small screens and lend to the trustworthiness of the brand - and comfortaa in all lowercase for the logo as the round, geometric font is playful and fun like pets.</p>
+                        <p>I started the branding work by choosing Josefin Slab and Muli for the main typography - a geometric serif with modern details for headings and a minimalist sans-serif with a large x-height for easy readability in body copy.</p>
                     </div>
                     <div class="item-11 flex-container right">
-                        <div class="lato typography white-bg">
-                            <h4>Lato Bold</h4>
+                        <div class="josefin typography white-bg">
+                            <h4>Josefin Slab</h4>
                             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
                             <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
                             <p>0 1 2 3 4 5 6 7 8 9</p>
                         </div>
-                        <div class="open-sans typography white-bg">
-                            <h4>Open Sans</h4>
+                        <div class="muli typography white-bg">
+                            <h4>Muli</h4>
                             <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
                             <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
                             <p>0 1 2 3 4 5 6 7 8 9</p>
@@ -446,7 +470,7 @@
             </section>
             <a name="design"></a>
             <section class="visual-design">
-                <div id="dogtopia-mockup" class="full-width-image"></div>
+                <div id="pocketed-mockup" class="full-width-image"></div>
                 <div class="grey-bg">
                     <div class="container">
                         <div class="center">
@@ -455,15 +479,15 @@
                         </div>
                         <div class="flex-container image-container">
                             <div class="one-third">
-                                <img src="assets/images/dogtopia/onboardingflow.gif" class="mockup" alt="prototype">
+                                <img src="assets/images/pocketed/onboardingflow.gif" class="mockup" alt="prototype">
                                 <p>On Boarding Flow</p>
                             </div>
                             <div class="one-third">
-                                <img src="assets/images/dogtopia/searchflow.gif" class="mockup" alt="prototype">
+                                <img src="assets/images/pocketed/searchflow.gif" class="mockup" alt="prototype">
                                 <p>Search Flow</p>
                             </div>
                             <div class="one-third">
-                                <img src="assets/images/dogtopia/reservationflow.gif" class="mockup" alt="prototype">
+                                <img src="assets/images/pocketed/reservationflow.gif" class="mockup" alt="prototype">
                                 <p>Reservation Flow</p>
                             </div>
                         </div>
@@ -477,9 +501,10 @@
                 <div class="container center">
                     <h2>What I Learned</h2>
                     <p class="user-testing">This project taught me a lot about working within the iOS Human Interface Guidelines and how straying from commonly used elements can affect usability. I made the assumption that users would work from the top of the screen down when making a reservation, but because the calendar was such a prominent and familiar element it was where the majority of the users focused first. Because the calendar wouldn’t work until the service type was selected it threw off the flow and users got stuck. Fixing that element so users could select dates on the calendar at any point during the reservation process solved the usability issues.</p>
+                    <p class="nav-title">View More Work</p>
                     <ul class="case-study-nav">
-                        <li><a class="hvr-underline-from-center" href="blocbox.html">blocbox</a></li>
-                        <li><a class="active hvr-underline-from-center" href="dogtopia.html">dogtopia</a></li>
+                        <li><a class="hvr-underline-from-center" href="dogtopia.html">prev</a></li>
+                        <li><a class="hvr-underline-from-center" href="blocbox.html">next</a></li>
                     </ul>
                 </div>
             </section>

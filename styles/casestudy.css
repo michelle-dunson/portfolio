@@ -301,6 +301,7 @@ td:first-child {
 .user {
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 img.user-photo {
@@ -564,6 +565,16 @@ video {
     font-weight: 700;
 }
 
+.muli h4,
+.muli p {
+    font-family: 'Muli';
+}
+
+.josefin h4, 
+.josefin p {
+    font-family: 'Josefin Slab';
+}
+
 .open-sans h4,
 .open-sans p {
     font-family: 'Open Sans';
@@ -581,6 +592,7 @@ video {
 
 .project-logo {
     margin: 2%;
+    flex-basis: 50%;
 }
 
 .project-logo img {
@@ -629,6 +641,11 @@ video {
     background-color: #534365;
 }
 
+#dark-gray,
+#gray {
+    background-color: #6e7376;
+}
+
 #dark h3 {
     color: #ffffff;
 }
@@ -670,6 +687,22 @@ video {
     background-color: #534365;
 }
 
+#oceanblue {
+    background-color: #4d6d9a;
+}
+
+#lightblue {
+    background-color: #729dbf;
+}
+
+#pink {
+    background-color: #edb5bf;
+}
+
+#seafoam {
+    background-color: #99ced3;
+}
+
 #blue {
     background-color: #363490;
 }
@@ -685,6 +718,10 @@ video {
 #grey {
     background-color: #e2e2e2;
     color: #333333;
+}
+
+#charcoal {
+    background-color: #373737;
 }
 
 #white {
@@ -710,9 +747,17 @@ video {
     margin-right: 10px;
 }
 
+.nav-title {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
 .case-study-nav {
     display: flex;
     justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .case-study-nav li {
@@ -724,10 +769,6 @@ video {
 
 .case-study-nav li a {
     color: #333333;
-}
-
-a.active {
-    color: #e2e2e2 !important;
 }
 
 footer {
@@ -755,6 +796,9 @@ footer {
     }
     .user:last-child {
         padding-right: 0;
+    }
+    #personas {
+        align-items: flex-start;
     }
     .persona {
         height: 380px;
